@@ -6,15 +6,15 @@ export default function Home() {
   return (
     <div className="homeContainer">
       <div className="homeMain">
+        <div className="homeWrap">
+          <Link to="#" className="mainText">
+            <Link id="text1" to="#"><span>EMBERTON</span></Link>
+            <Link id="text2" to="#">FILL YOUR HOME WITH <br></br>ABSOLUTE 360˚ SOUND</Link>
+            <Link id="text3" to="#">Rock out but stay in with big-stage sound in a small frame</Link>
+            <button className="button">GET IT NOW</button>
+          </Link>
+        </div>
         <div className="gradientDiv">
-          <div className="homeWrap">
-            <div className="mainText">
-              <Link id="text1" to="#"><span>EMBERTON</span></Link>
-              <Link id="text2" to="#">FILL YOUR HOME WITH <br></br>ABSOLUTE 360˚ SOUND</Link>
-              <Link id="text3" to="#">Rock out but stay in with big-stage sound in a small frame</Link>
-              <button className="button">GET IT NOW</button>
-            </div>
-          </div>
         </div>
       </div>
       <article className="homeContents01">
@@ -48,17 +48,17 @@ export default function Home() {
         </div>
       </article>
       <article className="homeContents02">
-        <Link to="#" className="gradientDiv">
-          <div className="contentsText">
-            <span>
-              MAJOR IV
+      <Link to="#" className="gradientDiv">
+        </Link>
+        <Link to="#" className="contentsText">
+          <span>
+            MAJOR IV
             </span>
-            <h2>
-              AN ICON, REBORN WITH<br></br> UNRIVALLED MARHHALL SOUND
+          <h2>
+            AN ICON, REBORN WITH<br></br> UNRIVALLED MARHHALL SOUND
             </h2>
-            <p>Take some time for yourself and your music</p>
-            <button className="button">GET IT NOW</button>
-          </div>
+          <p>Take some time for yourself and your music</p>
+          <button className="button">GET IT NOW</button>
         </Link>
       </article>
       <article className="homeContents03">
@@ -75,7 +75,7 @@ export default function Home() {
           </Link>
           <Link to="#" className="imgDiv03">
             <div className="gradientDiv">
-              
+
             </div>
           </Link>
         </div>

@@ -1,6 +1,9 @@
 * {
   font-family: "HelveticaNeueLTPro-BdCn", sans-serif;
 }
+.App{
+  position: relative;
+}
 .button {
   margin-top : 20px;
   padding : 0.6vw 1vw;

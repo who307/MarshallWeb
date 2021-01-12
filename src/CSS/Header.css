@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: flex-start;
   background-color: rgb(0, 0, 0);
+  z-index: 99;
 }
 .hiddenWrap{
   width : 95%;
@@ -25,7 +26,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 99;
 }
 .hiddenLogo{
   z-index: 3;
@@ -99,6 +99,7 @@
   justify-content: space-around;
   align-items: center;
   padding : 25px 0 10px 0;
+  z-index: 99;
 }
 .languageDiv{
   width : 95%;
