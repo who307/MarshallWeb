@@ -1,0 +1,189 @@
+.homeContainer {
+  width : 100%;
+  height: 4000px;
+}
+.homeMain{
+  width : 100%;
+  height: 60vw;
+  background :url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw31fb25da/images/front-page/year/2021/january/post-holiday/post-holiday-hero-emberton-bnb-en-big-desktop@1.41x.jpg?sw=2000&sh=2000&sm=fit)no-repeat;
+  background-size : 100% 100%;
+}
+.homeMain .gradientDiv{
+  width : 100%;
+  height: 60vw;
+  transition: background 0.5s;
+}
+.homeMain .gradientDiv:hover{
+  background: rgb(0, 0, 0, 0.2);
+}
+.homeWrap{
+  height: 53vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.mainText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainText a{
+ color : white;
+ font-weight: bold;
+ padding : 8px;
+}
+.mainText #text1{
+  font-size : 1.25vw;
+}
+.mainText #text2{
+  font-size : 3vw;
+}
+.mainText #text3{
+  font-size : 1.25vw;
+}
+.homeContents01{
+  width : 100%;
+  height: 40vw;
+  background :#232225;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeContents01 .contentsDiv{
+  width : 85%;
+  height: 42vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.homeContents01.contentsDiv a{
+  width : 80%;
+  margin : 0 2vw;
+}
+.homeContents01 .contentsDiv a .gradientDiv {
+  width : 100%;
+  height: 100%;
+  transition: background 0.5s;
+}
+.contentsDiv a .gradientDiv:hover{
+  background: rgb(0, 0, 0, 0.1);
+}
+.homeContents01 .contentsDiv .imgDiv01{
+  width : 45%;
+  height: 37vw;
+  background : url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwdadeb577/images/front-page/year/2021/january/post-holiday/post-holiday-2-col-acton-ii-bt-desktop@1.41x.jpg?sw=1234&sh=2000&sm=fit);
+  background-size : 100% 100%;
+}
+.homeContents01 .contentsDiv .contentsText {
+  width:  100%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.homeContents01 .contentsDiv span{
+  color : white;
+  font-size : 1vw;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.homeContents01 .contentsDiv .imgDiv01 h2, .imgDiv02 h2{
+  color : white;
+  font-size : 2vw;
+  font-weight: bold;
+}
+.homeContents01 .contentsDiv .imgDiv02{
+  width : 45%;
+  height: 37vw;
+  background : url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwdfa94768/images/front-page/year/2021/january/post-holiday/post-holiday-2-col-acton-ii-bt-white-desktop@1.41x.jpg?sw=1234&sh=2000&sm=fit);
+  background-size : 100% 100%;
+}
+.homeContents02{
+  width : 100%;
+  height: 50vw;
+  background :url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw2a33939b/images/front-page/year/2021/january/post-holiday/post-holiday-fullwidth-major-iv-desktop@1.41x.jpg?sw=2000&sh=2000&sm=fit);
+  background-size : 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeContents02 .gradientDiv{
+  width : 100%;
+  height: 100%;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+.homeContents02 .gradientDiv:hover{
+  background: rgb(0, 0, 0, 0.1);
+}
+.homeContents02 .gradientDiv .contentsText{
+  width : 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+.homeContents02 .gradientDiv .contentsText span{
+  color : white;
+  font-size : 1.5vw;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.homeContents02 .gradientDiv .contentsText h2{
+  color : white;
+  font-size : 3vw;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.homeContents02 .gradientDiv .contentsText p{
+  color : white;
+  font-size : 1vw;
+  font-weight: bold;
+}
+.homeContents03{
+  width : 100%;
+  height: 30vw;
+  background :#232225;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeContents03 .contentsDiv{
+  width: 90%;
+  height: 27vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.homeContents03 .contentsDiv .imgDiv01{
+  width : 25%;
+  height: 23vw;
+  background-image: url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw4086c9ca/images/front-page/year/2021/january/post-holiday/post-holiday-3-col-major-iii-bt-mobile@5x.jpg?sw=568&sh=2000&sm=fit);
+  background-size : 100% 100%;
+}
+.homeContents03 .contentsDiv .imgDiv02{
+  width : 25%;
+  height: 23vw;
+  background-image: url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw1289a60d/images/front-page/year/2021/january/post-holiday/post-holiday-3-col-accessories-desktop@3x.jpg?sw=1234&sh=2000&sm=fit);
+  background-size : 100% 100%;
+}
+.homeContents03 .contentsDiv .imgDiv03{
+  width : 25%;
+  height: 23vw;
+  background-image: url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw8bf9dcd6/images/front-page/year/2021/january/post-holiday/post-holiday-3-col-monitor-ii-anc-desktop@3x.jpg?sw=1234&sh=2000&sm=fit);
+  background-size : 100% 100%;
+}
+.homeContents03 .contentsDiv .gradientDiv{
+  width : 100%;
+  height: 23vw;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+.homeContents03 .contentsDiv .gradientDiv :hover{
+  background: rgb(0, 0, 0, 0.2);
+}
