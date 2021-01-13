@@ -4,8 +4,9 @@ import { faSearch, faQuestionCircle, faShoppingCart, faChevronDown } from "@fort
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import '../CSS/Header.css';
 
-export default function Header() {
+export default function Header(props) {
 
+  // 네비게이션 표시
   let _hidden = useRef();
   let _category = useRef();
   useEffect(() => {
@@ -20,8 +21,14 @@ export default function Header() {
       }
     })
   })
+  // 지역선택 props
+  let openCountry = props.openCountry
+  //지역선택 오픈
+  const openBtn = () =>{
+    props.setOpenCountry(true);
+  }
   return (
-    <div className="headerContainer">
+    <div className="headerContainer" style = {openCountry? {position : "absolute", top: "18vw"} : {position : "absolute", top : "-1.5vw"}}>
       <div className="hiddenCategory" ref={_hidden}>
         <div className="hiddenWrap">
           <Link className="hiddenLogo" to="/home"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
@@ -46,9 +53,9 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="headerWrap">
+      <div className="headerWrap" style = {openCountry? {position : "relative", top: "0vw"} : {}}>
         <div className="languageDiv">
-          <div className="languageWrap">
+          <div className="languageWrap" onClick ={openBtn}>
             <span >SOUTH KOREA/EN</span>
             <FontAwesomeIcon icon={faChevronDown} />
           </div>

@@ -2,6 +2,7 @@
 ### https://www.marshallheadphones.com/kr/en/
 ### https://who307.github.io/MarshallWeb/
 ### 2021-01-13
-1. header 컴포넌트 제작
+1. header 컴포넌트 제작 네비게이션 useRef()사용
 2. Home 컴포넌트 제작
 3. footer 컴포넌트 제작
+4. Counrty 컴포넌트 제작

@@ -13,9 +13,8 @@
   letter-spacing: -0.5px;
 }
 .button {
-  padding : 1vw 1.25vw;
+  padding : 0.8vw 2vw;
   border :none;
-  border-radius: 3px;
   outline : none;
   cursor: pointer;
   font-weight: bold;
