@@ -12,9 +12,9 @@ export default function Header() {
     document.addEventListener("scroll", function () {
       let _scrollTop = document.documentElement.scrollTop;
       if (_scrollTop >= 110) {
-        _hidden.current.style = ("top : 0px; transition : top 0.5s");
+        _hidden.current.style = ("top : 0px; transition : top 0.4s");
         _category.current.style = ("background : black; transition : background 1s;");
-      } else if (_scrollTop <= 115) {
+      } else if (_scrollTop <= 110) {
         _hidden.current.style = ("top : -120px;")
         _category.current.style = ("transition : background 0.5s;");
       }

@@ -1,15 +1,24 @@
-* {
-  font-family: "HelveticaNeueLTPro-BdCn", sans-serif;
+@font-face {
+  font-family: 'HelveticaNeueLTPro-BdCn';
+  font-weight: 500;
+  src: url("../font/HelveticaNeueLTPro-BdCn.otf") format('otf');
 }
-.App{
-  position: relative;
+@font-face {
+  font-family: 'Anton';
+  font-weight: 500;
+  src: url("../font/Anton-Regular.ttf") format('ttf');
+}
+.App {
+  font-family: 'HelveticaNeueLTPro-BdCn';
+  letter-spacing: -0.5px;
 }
 .button {
-  margin-top : 20px;
-  padding : 0.6vw 1vw;
+  padding : 1vw 1.25vw;
   border :none;
+  border-radius: 3px;
   outline : none;
   cursor: pointer;
   font-weight: bold;
   font-size : 0.8vw;
+  background : white;
 }

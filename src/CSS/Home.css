@@ -1,7 +1,10 @@
 .homeContainer {
   width : 100%;
-  height: 4000px;
+  height: 100%;
   position: relative;
+}
+.homeContainer .button{
+  margin-top :20px;
 }
 .homeMain{
   width : 100%;
@@ -44,12 +47,15 @@
 }
 .mainText #text1{
   font-size : 1.25vw;
+  letter-spacing: -1px;
 }
 .mainText #text2{
   font-size : 3.25vw;
+  letter-spacing: -4.5px;
 }
 .mainText #text3{
-  font-size : 1.25vw;
+  font-size : 1.1vw;
+  letter-spacing: -1px;
 }
 .homeContents01{
   width : 100%;
@@ -60,7 +66,7 @@
   align-items: center;
   position: relative;
 }
-.homeContents01 .contentsDiv{
+.homeContents01 .contentsDiv01{
   width : 85%;
   height: 42vw;
   display: flex;
@@ -68,48 +74,52 @@
   align-items: center;
   position: relative;
 }
-.homeContents01.contentsDiv a{
+.homeContents01.contentsDiv01 a{
   width : 80%;
   margin : 0 2vw;
 }
-.homeContents01 .contentsDiv a .gradientDiv {
+.homeContents01 .contentsDiv01 a .gradientDiv {
   width : 100%;
   height: 100%;
   transition: background 0.6s;
 }
-.contentsDiv a .gradientDiv:hover{
+.homeContents01 .contentsDiv01 .gradientDiv:hover{
   background: rgb(0, 0, 0, 0.2);
 }
-.homeContents01 .contentsDiv .imgDiv01{
+.homeContents01 .contentsDiv01 .imgDiv01{
   width : 45%;
   height: 37vw;
   background : url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwdadeb577/images/front-page/year/2021/january/post-holiday/post-holiday-2-col-acton-ii-bt-desktop@1.41x.jpg?sw=1234&sh=2000&sm=fit);
   background-size : 100% 100%;
+  position : relative;
 }
-.homeContents01 .contentsDiv .contentsText {
+.homeContents01 .contentsDiv01 .contentsText {
   width:  100%;
-  height: 95%;
+  height: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  position: absolute;
+  bottom : 2vw;
 }
-.homeContents01 .contentsDiv span{
+.homeContents01 .contentsDiv01 span{
   color : white;
   font-size : 1vw;
   margin-bottom: 10px;
   font-weight: bold;
 }
-.homeContents01 .contentsDiv .imgDiv01 h2, .imgDiv02 h2{
+.homeContents01 .contentsDiv01 h2{
   color : white;
   font-size : 2vw;
   font-weight: bold;
 }
-.homeContents01 .contentsDiv .imgDiv02{
+.homeContents01 .contentsDiv01 .imgDiv02{
   width : 45%;
   height: 37vw;
   background : url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwdfa94768/images/front-page/year/2021/january/post-holiday/post-holiday-2-col-acton-ii-bt-white-desktop@1.41x.jpg?sw=1234&sh=2000&sm=fit);
   background-size : 100% 100%;
+  position : relative;
 }
 .homeContents02{
   width : 100%;
@@ -126,7 +136,6 @@
   height: 100%;
   transition: background 0.6s;
   cursor: pointer;
-  position: relative;
 }
 .homeContents02 .gradientDiv:hover{
   background: rgb(0, 0, 0, 0.2);
@@ -157,7 +166,7 @@
 }
 .homeContents02 .contentsText p{
   color : white;
-  font-size : 1vw;
+  font-size : 1.25vw;
   font-weight: bold;
 }
 .homeContents03{
@@ -168,37 +177,188 @@
   justify-content: center;
   align-items: center;
 }
-.homeContents03 .contentsDiv{
+.homeContents03 .contentsDiv03{
   width: 90%;
   height: 27vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.homeContents03 .contentsDiv .imgDiv01{
+.homeContents03 .contentsDiv03 .imgDiv01{
   width : 25%;
   height: 23vw;
   background-image: url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw4086c9ca/images/front-page/year/2021/january/post-holiday/post-holiday-3-col-major-iii-bt-mobile@5x.jpg?sw=568&sh=2000&sm=fit);
   background-size : 100% 100%;
+  position: relative;
 }
-.homeContents03 .contentsDiv .imgDiv02{
+.homeContents03 .contentsDiv03 .imgDiv02{
   width : 25%;
   height: 23vw;
   background-image: url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw1289a60d/images/front-page/year/2021/january/post-holiday/post-holiday-3-col-accessories-desktop@3x.jpg?sw=1234&sh=2000&sm=fit);
   background-size : 100% 100%;
+  position: relative;
 }
-.homeContents03 .contentsDiv .imgDiv03{
+.homeContents03 .contentsDiv03 .imgDiv03{
   width : 25%;
   height: 23vw;
   background-image: url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw8bf9dcd6/images/front-page/year/2021/january/post-holiday/post-holiday-3-col-monitor-ii-anc-desktop@3x.jpg?sw=1234&sh=2000&sm=fit);
   background-size : 100% 100%;
+  position: relative;
 }
-.homeContents03 .contentsDiv .gradientDiv{
+.homeContents03 .contentsDiv03 .gradientDiv{
   width : 100%;
   height: 23vw;
   transition: background 0.6s;
   cursor: pointer;
 }
-.homeContents03 .contentsDiv .gradientDiv :hover{
+.homeContents03 .contentsDiv03 .gradientDiv:hover{
   background: rgb(0, 0, 0, 0.2);
+}
+.homeContents03 .contentsDiv03 .contentsText{
+  width :100%;
+  height: 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom : 2.5vw;
+  text-align: center;
+}
+.homeContents03 .contentsDiv03 span{
+  color : white;
+  font-size : 1vw;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.homeContents03 .contentsDiv03 h2{
+  color : white;
+  font-size : 2vw;
+  font-weight: bold;
+}
+.homeContents04 {
+  width : 100%;
+  height: 35vw;
+  background-image :radial-gradient(circle at 49% 53%, #f0f0f0, #aaa 62%, #4f4f4f);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding : 8vw 0 ;
+}
+.homeContents04 .contentsTitle{
+  width : 90%;
+  height: 8vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.homeContents04 .contentsTitle h2{
+  color : black;
+  font-size : 2vw;
+  font-weight: bold;
+  margin-bottom: 1.5vw;
+  letter-spacing: -2px;;
+}
+.homeContents04 .contentsTitle span{
+  color : black;
+  font-size : 1vw;
+  letter-spacing: 0.5px;;
+}
+.homeContents04 .contentsDiv04{
+  width : 90%;
+  height: 30vw;
+  display: flex;
+  justify-content: space-around;
+}
+.homeContents04 .contentsWrap{
+  width : 90%;
+  height: 21vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homeContents04 .contentsDiv04  .imgLink {
+  width : 80%;
+  height: 18vw;
+  display: flex;
+  flex-direction: column;
+}
+.homeContents04 .contentsDiv04 a .imgDiv01 {
+  width : 100%;
+  height: 25vw;
+  background : url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Sites-zs-master-catalog/default/dw64d73121/images/marshall/headphones/monitor-ii-anc/medium/mh-monitor-II-ANC-medium.png?sw=670&sh=670&sm=fit);
+  background-size: 100% 100%;
+}
+.homeContents04 .contentsDiv04 a .imgDiv02 {
+  width : 100%;
+  height: 25vw;
+  background : url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Sites-zs-master-catalog/default/dw88a48dc4/images/marshall/speakers/emberton/medium/Thumbnail_Emberton_medium.png?sw=670&sh=670&sm=fit);
+  background-size: 100% 100%;
+}
+
+.homeContents04 .contentsDiv04 a .imgDiv03 {
+  width : 100%;
+  height: 25vw;
+  background : url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Sites-zs-master-catalog/default/dw238395b1/images/marshall/speakers/stockwell-ii/black/medium/pl-marshall-speakers-stockwell-ii-black.png?sw=670&sh=670&sm=fit);
+  background-size: 100% 100%;
+}
+
+.homeContents04 .contentsDiv04 a .imgDiv04 {
+  width : 100%;
+  height: 25vw;
+  background : url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Sites-zs-master-catalog/default/dw997ba8ca/images/marshall/speakers/kilburn-ii/medium/pl-marshall-speakers-kilburn-ii-black-1700x1700.png?sw=670&sh=670&sm=fit);
+  background-size: 100% 100%;
+}
+.homeContents04 .contentsDiv04 .contentsText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color : black;
+}
+.homeContents04 .contentsDiv04 .contentsText h2{
+  font-weight: bold;
+  font-size : 1.5vw;
+  margin-bottom: 0.6vw;
+}
+.homeContents04 .contentsDiv04 .contentsText h3{
+  font-size : 1vw;
+  font-weight: bold;
+  color :#161616;
+}
+.homeContents04 .contentsDiv04 .contentsText span{
+  font-weight: bold;
+  font-size : 1vw;
+}
+.contentsDiv04 .contentsText .productName {
+  margin-bottom: 1vw;
+}
+.contentsDiv04 .contentsText .priceText {
+  color :#161616;
+  font-size : 1vw;
+  width : 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentsDiv04 .contentsText .priceText div{
+  margin-right: 0.5vw;
+}
+.contentsDiv04 .contentsText .priceText i{
+  margin-right: 0.2vw;
+  font-weight: bold;
+}
+.contentsDiv04 .contentsText .colorSelect{
+  text-align: center;
+  margin-top : 0.7vw;
+}
+.contentsDiv04 .contentsText .colorSelect span{
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.2vw;
+  background-color: black;
 }
