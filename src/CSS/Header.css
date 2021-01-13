@@ -88,6 +88,8 @@
   cursor: pointer;
   font-size : 0.9vw;
 }
+/* hidden 메뉴 end */
+
 /* 기본메뉴 */
 .headerWrap{
   width: 100%;
@@ -96,7 +98,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding : 3vw 0 10px 0;
+  padding : 3vw 0 0 0;
   z-index: 2;
 }
 .languageDiv{
@@ -106,6 +108,7 @@
   align-items: center;
   color : white;
   font-weight: bold;
+  font-size : 1vw;
 }
 .languageDiv :hover, .iconDiv :hover {
   color :rgb(196, 192, 192);
@@ -121,8 +124,8 @@
 }
 .headerLogo {
   width : 12vw;
-  height : 3em;
-  margin-bottom : 10px;
+  height : 3vw;
+  margin-bottom : 1vw;
 }
 .headerCategory{
   width : 100%;
@@ -157,3 +160,4 @@
   color : white;
   font-size: 1.2vw;
 }
+/* 기본메뉴 end*/

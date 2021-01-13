@@ -82,10 +82,10 @@ export default function Footer() {
           </Link>
           </div>
           <div className="footerIcons">
-          <Link to ="spotify"><FontAwesomeIcon style={{ cursor: "pointer", }} size= "2x" icon={faSpotify} /></Link>
-          <Link to ="facebook"><FontAwesomeIcon style={{ cursor: "pointer" }} size= "2x" icon={faFacebook} /></Link>
-          <Link to ="instargram"><FontAwesomeIcon style={{ cursor: "pointer" }} size= "2x" icon={faInstagram} /></Link>
-            <Link to ="pinterest"><FontAwesomeIcon style={{ cursor: "pointer" }} size= "2x" icon={faPinterest} /></Link>
+          <Link to ="spotify"><div><FontAwesomeIcon style={{ cursor: "pointer", }} icon={faSpotify}/></div></Link>
+          <Link to ="facebook"><FontAwesomeIcon style={{ cursor: "pointer" }} icon={faFacebook} /></Link>
+          <Link to ="instargram"><FontAwesomeIcon style={{ cursor: "pointer" }} icon={faInstagram} /></Link>
+            <Link to ="pinterest"><FontAwesomeIcon style={{ cursor: "pointer" }} icon={faPinterest} /></Link>
           </div>
         </div>
         </div>
