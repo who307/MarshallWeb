@@ -79,7 +79,7 @@
   background : white;
   color: #161616;
   position: absolute;
-  top : 2.6vw;
+  top : 2.5vw;
   left: 0;
 }
 .countryDiv .countryWrap .selectDiv button{
@@ -90,10 +90,10 @@
   background : white;
   cursor: pointer;
   text-align: left;
+  font-size : 0.9vw;
 }
 .countryDiv .countryWrap .selectDiv .button{
-  font-size : 0.9vw;
-  padding : 0.85vw 2.8vw;
+  padding : 0.8vw 2.8vw;
 }
 
 /* 지역설정 메뉴 end */
