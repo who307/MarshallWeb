@@ -16,7 +16,7 @@ function App() {
   
   console.log(country.language);
   // Country 컴포넌트 온오프
-  let [openCountry, setOpenCountry] = useState(false)
+  let [openCountry, setOpenCountry] = useState(true)
 
   return (
     <Router>
