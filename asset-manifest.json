@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MarshallWeb/static/css/main.a5d84161.chunk.css",
+    "main.css": "/MarshallWeb/static/css/main.6a7aae45.chunk.css",
     "main.js": "/MarshallWeb/static/js/main.5bd3c3c4.chunk.js",
     "main.js.map": "/MarshallWeb/static/js/main.5bd3c3c4.chunk.js.map",
     "runtime-main.js": "/MarshallWeb/static/js/runtime-main.d6d05d08.js",
@@ -10,14 +10,14 @@
     "static/js/3.bd5f7f79.chunk.js": "/MarshallWeb/static/js/3.bd5f7f79.chunk.js",
     "static/js/3.bd5f7f79.chunk.js.map": "/MarshallWeb/static/js/3.bd5f7f79.chunk.js.map",
     "index.html": "/MarshallWeb/index.html",
-    "static/css/main.a5d84161.chunk.css.map": "/MarshallWeb/static/css/main.a5d84161.chunk.css.map",
+    "static/css/main.6a7aae45.chunk.css.map": "/MarshallWeb/static/css/main.6a7aae45.chunk.css.map",
     "static/js/2.c188a713.chunk.js.LICENSE.txt": "/MarshallWeb/static/js/2.c188a713.chunk.js.LICENSE.txt",
     "static/media/App.css": "/MarshallWeb/static/media/HelveticaNeueLTPro-BdCn.fdd3df1d.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.d6d05d08.js",
     "static/js/2.c188a713.chunk.js",
-    "static/css/main.a5d84161.chunk.css",
+    "static/css/main.6a7aae45.chunk.css",
     "static/js/main.5bd3c3c4.chunk.js"
   ]
 }
