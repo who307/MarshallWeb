@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: center;
   background : black;
+  position: relative;
+  bottom : 0;
 }
 .footerWrap {
   width : 100%;
