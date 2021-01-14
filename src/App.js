@@ -30,7 +30,7 @@ function App() {
             setCountry={setCountry}/>
         )}
         <Home />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
