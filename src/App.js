@@ -21,7 +21,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header openCountry={openCountry}
+        {/* <Header openCountry={openCountry}
           setOpenCountry={setOpenCountry}
           country={country} />
         {openCountry === true && (
@@ -29,8 +29,8 @@ function App() {
             setOpenCountry={setOpenCountry}
             setCountry={setCountry}/>
         )}
-        <Home />
-        {/* <Footer /> */}
+        <Home /> */}
+        <Footer />
       </div>
     </Router>
   );
