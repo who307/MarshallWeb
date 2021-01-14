@@ -124,13 +124,13 @@
   font-size : 0.9vw;
 }
 .headerLogo {
-  width : 12vw;
+  width : 13vw;
   height : 3vw;
   margin-bottom : 1vw;
 }
 .headerCategory{
   width : 100%;
-  height: 6vw;
+  height: 5vw;
   display: flex;
   justify-content: center;
   align-content: center;
