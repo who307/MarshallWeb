@@ -28,8 +28,8 @@ function App() {
           <Country openCountry={openCountry}
             setOpenCountry={setOpenCountry}
             setCountry={setCountry}/>
-        )}
-        <Home /> */}
+        )} */}
+        <Home />
         <Footer />
       </div>
     </Router>
