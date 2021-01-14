@@ -6,29 +6,42 @@ import '../CSS/Header.css';
 
 export default function Header(props) {
 
-  // 네비게이션 표시
+  //Country(지역 선택) 컴포넌트 오픈, 스크롤위치 최상단이동
+  const openBtn = () => {
+    props.setOpenCountry(!props.openCountry);
+    document.querySelector("html").scrollTo(0, 0);
+  }
+
+  // 네비게이션 표시 Country캄포넌트가 오픈상태면 함수실행x
+  // 스크롤메소드 useEffect() clean-up
+  useEffect(() => {
+    window.addEventListener("scroll", scrollEvent);
+    return () => window.removeEventListener("scroll", scrollEvent)
+  });
+
   let _hidden = useRef();
   let _category = useRef();
-  useEffect(() => {
-    document.addEventListener("scroll", function () {
-      let _scrollTop = document.documentElement.scrollTop;
-      if (_scrollTop >= 110) {
+  const scrollEvent = () => {
+    let _scroll = document.documentElement.scrollTop;
+
+    if (_scroll === 0) {
+      _hidden.current.style = ("top : -120px;")
+      _category.current.style = ("transition : background 0.5s;");
+    }
+    if (props.openCountry === false) {
+      if (_scroll >= 110) {
         _hidden.current.style = ("top : 0px; transition : top 0.4s");
         _category.current.style = ("background : black; transition : background 1s;");
-      } else if (_scrollTop <= 110) {
+      } else if (_scroll <= 110) {
         _hidden.current.style = ("top : -120px;")
         _category.current.style = ("transition : background 0.5s;");
       }
-    })
-  })
-  // 지역선택 props
-  let openCountry = props.openCountry
-  //지역선택 오픈
-  const openBtn = () =>{
-    props.setOpenCountry(true);
+    }
   }
+
+  console.log(props.country)
   return (
-    <div className="headerContainer" style = {openCountry? {position : "absolute", top: "18vw"} : {position : "absolute", top : "-1.5vw"}}>
+    <div className="headerContainer" style={props.openCountry ? { position: "absolute", top: "18vw" } : { position: "absolute", top: "-1.5vw" }}>
       <div className="hiddenCategory" ref={_hidden}>
         <div className="hiddenWrap">
           <Link className="hiddenLogo" to="/home"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
@@ -46,17 +59,17 @@ export default function Header(props) {
             </div>
           </div>
           <div className="languageDivH">
-            <div className="languageWrapH">
-              <span >SOUTH KOREA/EN</span>
+            <div className="languageWrapH" onClick={openBtn}>
+              <span >{props.country.country} / {props.country.language}</span>
               <FontAwesomeIcon icon={faChevronDown} />
             </div>
           </div>
         </div>
       </div>
-      <div className="headerWrap" style = {openCountry? {position : "relative", top: "0vw"} : {}}>
+      <div className="headerWrap" style={props.openCountry ? { position: "relative", top: "0vw" } : {}}>
         <div className="languageDiv">
-          <div className="languageWrap" onClick ={openBtn}>
-            <span >SOUTH KOREA/EN</span>
+          <div className="languageWrap" onClick={openBtn}>
+            <span >{props.country.country} / {props.country.language}</span>
             <FontAwesomeIcon icon={faChevronDown} />
           </div>
         </div>
