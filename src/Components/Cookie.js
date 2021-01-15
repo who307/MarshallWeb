@@ -41,7 +41,7 @@ export default function Cookie(props) {
     <div style={_cookieContainer}>
       <div style ={_cookieWrap} ><span>This site uses cookies. Some of these cookies are essential, while others help us to improve your experience by providing insights into how the site is being used. For more detailed information
         on the cookies we use, please check our </span>
-        <Link style={_linkStyle} to="Policy">Cookie Policy.</Link></div>
+        <Link style={_linkStyle} to="policy">Cookie Policy.</Link></div>
       <FontAwesomeIcon onClick = {closeBtn} style={_closeBtn} icon={faTimes} />
     </div>
   )

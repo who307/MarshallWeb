@@ -55,11 +55,12 @@
   font-size: 1.1vw;
   color : white;
   margin: 0 1.2vw;
+  border-bottom : 0.2vw solid rgb(185, 184, 184,0);
 }
 .categoryWrapH li a:hover {
   color : rgb(185, 184, 184);
-  transition: color 0.5s;
-  border-bottom : 0.2vw solid rgb(185, 184, 184);
+  transition: color, border 0.5s;
+  border-bottom : 0.2vw solid rgb(185, 184, 184, 1);
 }
 
 .iconDivH{
@@ -161,11 +162,12 @@
   font-weight: bold;
   color : white;
   margin: 0 1.2vw;
+  border-bottom : 0.2vw solid rgb(185, 184, 184, 0);
 }
 .headerCategory li a:hover {
   color :rgb(196, 192, 192);
-  transition: color 0.5s;
-  border-bottom : 0.2vw solid rgb(185, 184, 184);
+  transition: color, border 0.5s;
+  border-bottom : 0.2vw solid rgb(185, 184, 184, 1);
 }
 .headerCategory .iconDiv{
   width: 6.5vw;
