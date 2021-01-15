@@ -4,6 +4,7 @@ import Country from './Components/Country';
 import Header from './Components/Header';
 import Home from './Components/Home';
 import Footer from "./Components/Footer";
+import Cookie from "./Components/Cookie"
 import './CSS/App.css';
 import './CSS/reset.css';
 
@@ -13,11 +14,13 @@ function App() {
     country: "SOUTH KOREA",
     language: "ENGLISH"
   })
-  
-  console.log(country.language);
-  // Country 컴포넌트 온오프
-  let [openCountry, setOpenCountry] = useState(true)
 
+  // Country 컴포넌트 온오프
+  let [openCountry, setOpenCountry] = useState(true);
+
+  // Cookie 컴포넌트 온오프
+  let [openCookie, setOpenCookie] = useState(true);
+  console.log(openCookie)
   return (
     <Router>
       <div className="App">
@@ -27,9 +30,14 @@ function App() {
         {openCountry === true && (
           <Country openCountry={openCountry}
             setOpenCountry={setOpenCountry}
-            setCountry={setCountry}/>
+            setCountry={setCountry} />
         )}
         <Home />
+        {openCookie === true && (
+          <Cookie
+            openCookie={openCookie}
+            setOpenCookie={setOpenCookie} />
+        )}
         <Footer />
       </div>
     </Router>

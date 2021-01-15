@@ -61,10 +61,19 @@ export default function Coutry(props) {
     console.log(dropMenu)
     alert(`국가 : ${dropMenu.country} 언어 : ${dropMenu.language} 입니다.`)
   }
+// colose버튼 스타일
+  const _closeBtn = {
+    cursor: "pointer",
+    color: "white",
+    fontSize: "2vw",
+    position: "absolute",
+    right: "3vw",
+    top: "1vw"
+  }
   return (
 
     <div className="countryDiv">
-      <FontAwesomeIcon onClick={closeBtn} style={{ cursor: "pointer", color: "white", fontSize: "2vw", position: "absolute", right: "3vw", top: "1vw" }} icon={faTimes} />
+      <FontAwesomeIcon onClick={closeBtn} style={_closeBtn} icon={faTimes} />
 
       <div className="countryWrap">
         <h2>SELECT COUNTRY AND LANGUAGE</h2>

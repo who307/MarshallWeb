@@ -12,6 +12,9 @@
   font-family: 'HelveticaNeueLTPro-BdCn';
   letter-spacing: -0.3px;
 }
+a{
+  color : black;
+}
 .button {
   padding : 1vw 2vw;
   border :none;
