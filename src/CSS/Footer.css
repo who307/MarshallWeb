@@ -15,7 +15,6 @@
   background : #161616;
   display :flex;
   justify-content: center;
-  align-items: center;
 }
 .footerWrap .newsLetterDiv .newLetterWrap{
   width : 85%;
@@ -71,7 +70,7 @@
   height: 10vw;
   display: flex;
   flex-direction: column;
-  letter-spacing: -0.5px;
+
 }
 .footerWrap .footerMenuDiv .footerMenu h2{
   margin-bottom: 0.8vw;
@@ -94,7 +93,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  letter-spacing: -0.5px;
 }
 .footerWrap .footerMenuDiv .footerLogin h1{
   color : white;
