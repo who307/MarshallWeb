@@ -41,10 +41,14 @@
   align-items: center;
 }
 .categoryMenuH{
+  height: 1vw;
   display: flex;
   justify-content: space-around;
   z-index: 2;
   align-items: center;
+}
+.categoryMenuH li{
+  height: 1vw;
 }
 .categoryWrapH li a{
   font-weight: bold;
@@ -144,6 +148,13 @@
   align-items: center;
 }
 .categoryMenu{
+  height: 1vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.categoryMenu li{
+  height: 1vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
