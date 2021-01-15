@@ -7,6 +7,7 @@ export default function Cookie(props) {
 
   const _cookieContainer = {
     width : "100%",
+    heigth : "10vw",
     position: "fixed",
     bottom: "0",
     textAlign: "center",
