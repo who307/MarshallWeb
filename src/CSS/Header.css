@@ -19,7 +19,7 @@
   z-index: 99;
 }
 .hiddenWrap{
-  width : 70%;
+  width : 100%;
   height: 6vw;
   display: flex;
   justify-content: center;
@@ -43,6 +43,7 @@
   display: flex;
   justify-content: space-around;
   z-index: 2;
+  align-items: center;
 }
 .categoryWrapH li a{
   font-weight: bold;
@@ -136,7 +137,7 @@
   align-content: center;
 }
 .categoryWrap {
-  width : 100%;
+  width : 80%;
   display: flex;
   justify-content: center;
   align-items: center;
