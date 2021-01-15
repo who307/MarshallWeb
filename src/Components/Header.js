@@ -45,8 +45,8 @@ export default function Header(props) {
       <div className="hiddenCategory" ref={_hidden}>
         <div className="hiddenWrap">
           <Link className="hiddenLogo" to="/home"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
-          <div className="categoryMenuH">
-            <ul className="categoryWrapH">
+          <div className="categoryWrapH">
+            <ul className="categoryMenuH">
               <li><Link to="/headphones">HEADPHONES</Link></li>
               <li><Link to="/speakers">SPEAKERS</Link></li>
               <li><Link to="/accessories">ACCESSORIES</Link></li>
@@ -75,16 +75,18 @@ export default function Header(props) {
         </div>
         <Link to="/home"><img className="headerLogo" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
         <div ref={_category} className="headerCategory">
-          <ul className="categoryMenu">
-            <li><Link to="/headphones">HEADPHONES</Link></li>
-            <li><Link to="/speakers">SPEAKERS</Link></li>
-            <li><Link to="/accessories">ACCESSORIES</Link></li>
-            <li><Link to="/backstage">BACKSTAGE</Link></li>
-          </ul>
-          <div className="iconDiv">
-            <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faSearch} />
-            <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faQuestionCircle} />
-            <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faShoppingCart} />
+          <div className="categoryWrap">
+            <ul className="categoryMenu">
+              <li><Link to="/headphones">HEADPHONES</Link></li>
+              <li><Link to="/speakers">SPEAKERS</Link></li>
+              <li><Link to="/accessories">ACCESSORIES</Link></li>
+              <li><Link to="/backstage">BACKSTAGE</Link></li>
+            </ul>
+            <div className="iconDiv">
+              <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faSearch} />
+              <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faQuestionCircle} />
+              <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faShoppingCart} />
+            </div>
           </div>
         </div>
       </div>
