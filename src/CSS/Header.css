@@ -56,7 +56,6 @@
   color : white;
   margin: 0 1.2vw;
   border-bottom : 3px solid rgb(185, 184, 184, 0);
-  line-height: normal;
 }
 .categoryWrapH li a:hover {
   color : rgb(185, 184, 184);
@@ -164,7 +163,6 @@
   color : white;
   margin: 0 1.2vw;
   border-bottom : 3px solid rgb(185, 184, 184, 0);
-  line-height: normal;
 }
 .headerCategory li a:hover {
   color :rgb(196, 192, 192);
