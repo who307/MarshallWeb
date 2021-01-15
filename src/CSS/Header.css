@@ -41,6 +41,7 @@
   left : 0px;
 }
 .categoryWrapH{
+  width : 40vw;
   display: flex;
   justify-content: space-around;
   z-index: 2;
@@ -136,6 +137,7 @@
   align-content: center;
 }
 .categoryMenu{
+  width : 40vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
