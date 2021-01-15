@@ -19,7 +19,7 @@
   z-index: 99;
 }
 .hiddenWrap{
-  width : 100%;
+  width : 70%;
   height: 6vw;
   display: flex;
   justify-content: center;
@@ -129,7 +129,7 @@
   margin-bottom : 1vw;
 }
 .headerCategory{
-  width : 100%;
+  width : 70%;
   height: 5vw;
   display: flex;
   justify-content: space-around;
@@ -139,6 +139,7 @@
   width : 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .categoryMenu{
   display: flex;
