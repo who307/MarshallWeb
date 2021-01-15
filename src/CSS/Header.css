@@ -35,8 +35,9 @@
   height : 3em;
 }
 .categoryWrapH{
+  width : 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .categoryMenuH{
@@ -137,7 +138,7 @@
   align-content: center;
 }
 .categoryWrap {
-  width : 80%;
+  width : 100%;
   display: flex;
   justify-content: center;
   align-items: center;
