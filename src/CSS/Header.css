@@ -50,18 +50,19 @@
   display: flex;
   align-items: center;
 }
-.categoryWrapH li a {
-  font-size: 1.1vw;
+.categoryWrapH li a{
   font-weight: bold;
+  font-size: 1.1vw;
   color : white;
   margin: 0 1.2vw;
   border-bottom : 0.2vw solid rgb(185, 184, 184, 0);
 }
 .categoryWrapH li a:hover {
-  color :rgb(196, 192, 192);
+  color : rgb(185, 184, 184);
   transition: color, border 0.5s;
   border-bottom : 0.2vw solid rgb(185, 184, 184, 1);
 }
+
 .iconDivH{
   width: 6.5vw;
   display: flex;
@@ -162,6 +163,7 @@
   color : white;
   margin: 0 1.2vw;
   border-bottom : 0.2vw solid rgb(185, 184, 184, 0);
+
 }
 .headerCategory li a:hover {
   color :rgb(196, 192, 192);
