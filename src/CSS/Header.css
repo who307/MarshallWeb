@@ -41,17 +41,13 @@
   align-items: center;
 }
 .categoryMenuH{
-  height: 1vw;
   display: flex;
   justify-content: space-around;
   z-index: 2;
   align-items: center;
-  background : rgb(74, 123, 255);
 }
 .categoryMenuH li{
-  height: 1vw;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 .categoryWrapH li a{
@@ -152,17 +148,12 @@
   align-items: center;
 }
 .categoryMenu{
-  height: 1vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background : rgb(74, 123, 255);
-
 }
 .categoryMenu li{
-  height: 1vw;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 .headerCategory li a {
