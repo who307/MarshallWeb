@@ -6,14 +6,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function Cookie(props) {
 
   const _cookieContainer = {
+    width : "100%",
     position: "fixed",
     bottom: "0",
     textAlign: "center",
     background: "white",
     fontWeight: "",
     fontSize: "1.1vw",
-    padding: "1.2vw 3vw",
     lineHeight: "1.4vw"
+  }
+  const _cookieWrap = {
+    padding : "1.3vw 3vw",
   }
   const _linkStyle = {
     textDecoration: "underline"
@@ -35,7 +38,7 @@ export default function Cookie(props) {
 
   return (
     <div style={_cookieContainer}>
-      <div><span>This site uses cookies. Some of these cookies are essential, while others help us to improve your experience by providing insights into how the site is being used. For more detailed information
+      <div style ={_cookieWrap} ><span>This site uses cookies. Some of these cookies are essential, while others help us to improve your experience by providing insights into how the site is being used. For more detailed information
         on the cookies we use, please check our </span>
         <Link style={_linkStyle} to="Policy">Cookie Policy.</Link></div>
       <FontAwesomeIcon onClick = {closeBtn} style={_closeBtn} icon={faTimes} />
