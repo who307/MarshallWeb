@@ -26,15 +26,15 @@ export default function Header(props) {
 
     if (_scroll === 0) {
       _hidden.current.style = ("top : -120px;")
-      _category.current.style = ("transition : background 0.5s;");
+      _category.current.style = ("");
     }
     if (props.openCountry === false) {
       if (_scroll >= 110) {
-        _hidden.current.style = ("top : 0px; transition : top 0.4s");
-        _category.current.style = ("background : black; transition : background 1s;");
+        _hidden.current.style = ("top : 0px;");
+        _category.current.style = ("background : black;");
       } else if (_scroll <= 110) {
         _hidden.current.style = ("top : -120px;")
-        _category.current.style = ("transition : background 0.5s;");
+        _category.current.style = ("");
       }
     }
   }
