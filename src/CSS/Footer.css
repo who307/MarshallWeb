@@ -243,10 +243,13 @@
     font-size :2vw;
   }
   .footerWrap .newsLetterDiv .policyText{
-    width : 50vw;
+    width : 65vw;
     font-size : 2vw;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .footerWrap .newsLetterDiv .policyText a {
+    margin-left : 3vw;
   }
   .footerWrap .footerMenuDiv{
     height: 100vw;
