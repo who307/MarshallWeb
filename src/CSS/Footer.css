@@ -17,7 +17,7 @@
   justify-content: center;
 }
 .footerWrap .newsLetterDiv .newLetterWrap{
-  width : 85%;
+  width : 88%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,10 +67,8 @@
   padding: 4vw 0 2vw 0;
 }
 .footerWrap .footerMenuDiv .footerMenu {
-  height: 10vw;
   display: flex;
   flex-direction: column;
-
 }
 .footerWrap .footerMenuDiv .footerMenu h2{
   margin-bottom: 0.8vw;
