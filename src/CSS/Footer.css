@@ -216,7 +216,6 @@
   .footerContainer{
     position: relative;
     top : 8vw;
-    height: 100vw;
   }
   .footerWrap .newsLetterDiv{
     height: 35vw;
