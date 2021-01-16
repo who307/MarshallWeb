@@ -221,6 +221,7 @@
     height: 35vw;
   }
   .footerWrap .newsLetterDiv .newLetterWrap{
+    width: 100%;
     flex-direction: column;
     justify-content: space-around;
   }
@@ -243,7 +244,7 @@
     font-size :2vw;
   }
   .footerWrap .newsLetterDiv .policyText{
-    width : 65vw;
+    width : 100%;
     font-size : 2vw;
     flex-direction: row;
     justify-content: center;
