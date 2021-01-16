@@ -5,9 +5,6 @@
 .homeContainer .button{
   margin-top :1.5vw;
 }
-.homeContainerWrap{
-  transition:  top 0.5s;
-}
 /* 홈메인 */
 .homeMain{
   width : 100%;
@@ -31,7 +28,7 @@
   justify-content: center;
   align-items: flex-end;
   position: absolute;
-  bottom : 5vw;
+  bottom : 6vw;
 }
 .mainText {
   display: flex;

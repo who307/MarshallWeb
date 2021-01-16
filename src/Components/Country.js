@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -16,7 +16,7 @@ export default function Coutry(props) {
   let [openCountry, setOpenCountry] = useState();
   const countryOpenFunc = () => {
     if (!openCountry) {
-      countryOpen.current.style = ("display : flex", "z-index : 999");
+      countryOpen.current.style = ("display : flex", "z-index : 99");
       setOpenCountry(true);
     } else {
       countryOpen.current.style = ("display : none");
@@ -79,7 +79,7 @@ export default function Coutry(props) {
   }
   return (
 
-    <div className="countryDiv">
+    <div className="countryDiv" style ={props.openCountry ? {} : {height : "0"}}>
       <FontAwesomeIcon onClick={closeBtn} style={_closeBtn} icon={faTimes} />
 
       <div className="countryWrap">

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { faSearch, faQuestionCircle, faShoppingCart, faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -39,7 +39,7 @@ export default function Header(props) {
     }
   }
   return (
-    <div className="headerContainer" style={props.openCountry ? { position: "absolute", top: "19vw", zIndex : "99" } : { position: "absolute", top: "-1.5vw", zIndex : "9999" }}>
+    <div className="headerContainer" style={props.openCountry ? { position: "absolute", top: "19vw", zIndex : "99" } : { position: "absolute", top: "-1vw", zIndex : "9999" }}>
       <div className="hiddenCategory" ref={_hidden}>
         <div className="hiddenWrap">
           <Link className="hiddenLogo" to="/home"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>

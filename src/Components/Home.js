@@ -5,8 +5,8 @@ import '../CSS/Home.css';
 export default function Home(props) {
   return (
     <div className="homeContainer">
-      <div className="homeContainerWrap" style ={props.openCountry ? {position : "relative", top : "20vw"} : {position : "relative", top : "0", zIndex : "999"} }>
-        <div className="homeMain">
+      <div className="homeContainerWrap" >
+        <div className="homeMain"  style ={props.openCountry ? {} : {zIndex : "999"}}>
           <div className="homeWrap">
             <Link to="#" className="mainText">
               <Link id="text1" to="#"><span>EMBERTON</span></Link>

@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: top 0.5s;
+  transition: top 0.4s;
+  position: relative;
 }
 
 /* hidden 메뉴 */
