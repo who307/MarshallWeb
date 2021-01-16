@@ -38,10 +38,8 @@ export default function Header(props) {
       }
     }
   }
-
-  console.log(props.country)
   return (
-    <div className="headerContainer" style={props.openCountry ? { position: "absolute", top: "18vw" } : { position: "absolute", top: "-1.5vw" }}>
+    <div className="headerContainer" style={props.openCountry ? { position: "absolute", top: "19vw", zIndex : "99" } : { position: "absolute", top: "-1.5vw", zIndex : "9999" }}>
       <div className="hiddenCategory" ref={_hidden}>
         <div className="hiddenWrap">
           <Link className="hiddenLogo" to="/home"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
@@ -66,7 +64,7 @@ export default function Header(props) {
           </div>
         </div>
       </div>
-      <div className="headerWrap" style={props.openCountry ? { position: "relative", top: "0vw" } : {}}>
+      <div className="headerWrap">
         <div className="languageDiv">
           <div className="languageWrap" onClick={openBtn}>
             <span >{props.country.country} / {props.country.language}</span>

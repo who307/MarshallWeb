@@ -16,7 +16,7 @@ export default function Coutry(props) {
   let [openCountry, setOpenCountry] = useState();
   const countryOpenFunc = () => {
     if (!openCountry) {
-      countryOpen.current.style = ("display : flex");
+      countryOpen.current.style = ("display : flex", "z-index : 999");
       setOpenCountry(true);
     } else {
       countryOpen.current.style = ("display : none");
@@ -58,10 +58,17 @@ export default function Coutry(props) {
   const confirmBtn = () => {
     props.setCountry(dropMenu)
     props.setOpenCountry(!props.openCountry);
-    console.log(dropMenu)
     alert(`국가 : ${dropMenu.country} 언어 : ${dropMenu.language} 입니다.`)
+    if (openCountry && !openLang)
+      countryOpenFunc()
+    else if (!openCountry && openLang)
+      languageOpenFunc()
+    else if(openCountry && openLang){
+      countryOpenFunc()
+      languageOpenFunc()
+    }
   }
-// colose버튼 스타일
+  // colose버튼 스타일
   const _closeBtn = {
     cursor: "pointer",
     color: "white",

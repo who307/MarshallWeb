@@ -20,25 +20,26 @@ function App() {
 
   // Cookie 컴포넌트 온오프
   let [openCookie, setOpenCookie] = useState(true);
-  console.log(openCookie)
   return (
     <Router>
       <div className="App">
         <Header openCountry={openCountry}
           setOpenCountry={setOpenCountry}
           country={country} />
-        {openCountry === true && (
-          <Country openCountry={openCountry}
-            setOpenCountry={setOpenCountry}
-            setCountry={setCountry} />
-        )}
-        <Home />
+        <Country openCountry={openCountry}
+          setOpenCountry={setOpenCountry}
+          setCountry={setCountry} />
+
+        <Home
+          openCountry={openCountry} />
+
         {openCookie === true && (
           <Cookie
             openCookie={openCookie}
             setOpenCookie={setOpenCookie} />
         )}
-        <Footer />
+        <Footer
+          openCountry={openCountry} />
       </div>
     </Router>
   );

@@ -14,13 +14,15 @@ export default function Cookie(props) {
     background: "white",
     fontWeight: "",
     fontSize: "1.1vw",
-    lineHeight: "1.4vw"
+    lineHeight: "1.4vw",
+    zIndex : "9999"
   }
   const _cookieWrap = {
     padding : "1.3vw 3vw",
   }
   const _linkStyle = {
-    textDecoration: "underline"
+    textDecoration: "underline",
+    fontWeight : "bold"
   }
   const _closeBtn = {
     cursor: "pointer",

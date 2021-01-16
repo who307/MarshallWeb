@@ -4,9 +4,9 @@ import { faFacebook, faInstagram, faPinterest, faSpotify } from "@fortawesome/fr
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import '../CSS/Footer.css';
 
-export default function Footer() {
+export default function Footer(props) {
   return (
-    <div className="footerContainer">
+    <div className="footerContainer" style ={props.openCountry ? {position : "relative", top : "20vw"} : {} }>
       <div className="footerWrap">
         <div className="newsLetterDiv">
           <div className="newLetterWrap">
