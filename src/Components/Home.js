@@ -6,7 +6,7 @@ export default function Home(props) {
   return (
     <div className="homeContainer">
       <div className="homeContainerWrap" >
-        <div className="homeMain"  style ={props.openCountry ? {} : {zIndex : "999"}}>
+        <div className="homeMain"  style ={props.openCountry ? {zIndex : ""} : {zIndex : "999"}}>
           <div className="homeWrap">
             <Link to="#" className="mainText">
               <Link id="text1" to="#"><span>EMBERTON</span></Link>
