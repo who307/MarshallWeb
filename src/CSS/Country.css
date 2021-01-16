@@ -9,7 +9,7 @@
   position: relative;
   transition: height 0.4s;
 }
-._closeBtn {
+.countryDiv ._closeBtn {
   cursor: pointer;
   color: white;
   font-size: 2vw;
@@ -111,7 +111,7 @@
 
   .countryDiv{
     height: 30vw;
-  }
+  } 
   .countryDiv .countryWrap{
     width : 100%;
     height: 25vw;
@@ -124,8 +124,8 @@
     font-size : 1.5vw;
     line-height: 3vw;
   }
-  ._closeBtn {
-    font-size : 3.5vw;
+  .countryDiv ._closeBtn {
+    font-size: 3.5vw;
   }
   .countryDiv .countryWrap .selectDiv{
     width : 85%;

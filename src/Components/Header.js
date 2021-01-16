@@ -51,6 +51,7 @@ export default function Header(props) {
   const mobileCountry = () => {
     props.setOpenMobile(!props.openMobile)
     props.setOpenCountry(!props.openCountry)
+    document.querySelector("html").scrollTo(0, 0);
   }
   return (
     <div className="header">
