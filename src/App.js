@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 import Country from './Components/Country';
 import Header from './Components/Header';
@@ -20,12 +20,26 @@ function App() {
 
   // Cookie 컴포넌트 온오프
   let [openCookie, setOpenCookie] = useState(true);
+
+  // 모바일 메뉴 오픈
+  let [openMobile, setOpenMobile] = useState(false);
+  useEffect( () =>{
+    if(openMobile === true)
+    document.querySelector("html").style = ("overflow-y : hidden")
+    else
+    document.querySelector("html").style = ("")
+
+  })
+  
   return (
     <Router>
       <div className="App">
         <Header openCountry={openCountry}
           setOpenCountry={setOpenCountry}
-          country={country} />
+          country={country}
+          openMobile={openMobile}
+          setOpenMobile={setOpenMobile} />
+
         <Country openCountry={openCountry}
           setOpenCountry={setOpenCountry}
           setCountry={setCountry} />

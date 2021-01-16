@@ -2,6 +2,9 @@
 ### https://www.marshallheadphones.com/kr/en/
 ### https://who307.github.io/MarshallWeb/
 
+### 2021-01-16
+1. 모바일 미디어쿼리 작업
+
 ### 2021-01-15
 1. Cookie 컴포넌트 제작
 

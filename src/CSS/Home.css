@@ -1,6 +1,7 @@
 .homeContainer {
   width : 100%;
   height: 100%;
+  
 }
 .homeContainer .button{
   margin-top :1.5vw;
@@ -32,9 +33,10 @@
 }
 .mainText {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-flow :column wrap;
+  text-align: center;
   z-index: 3;
 }
 
@@ -47,10 +49,12 @@
   font-size : 1.25vw;
 }
 .mainText #text2{
+  width: 40vw;
   font-size : 3.25vw;
   letter-spacing: -0.3vw;
 }
 .mainText #text3{
+  width: 55vw;
   font-size : 1.2vw;
 }
 /* 홈메인 */
@@ -275,7 +279,6 @@
 }
 .homeContents04 .contentsWrap{
   width : 90%;
-  height: 21vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,3 +368,132 @@
   background-color: black;
 }
 /* 홈컨텐츠04 end*/
+
+/* 모바일 홈 */
+@media screen and (max-width: 1024px){
+  .homeContainer {
+    position: relative;
+    top : 8vw;
+  }
+  .mainText #text1{
+    font-size : 2.5vw;
+  }
+  .mainText #text2{
+    font-size : 5vw;
+  }
+  .mainText #text3{
+    font-size : 2.5vw;
+  }
+  .homeContents01{
+    height: 190vw;
+  }
+  .homeContents01 .contentsDiv01 {
+    width : 90%;
+    height: 190vw;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .homeContents01 .contentsDiv01 .imgDiv01{
+    width: 100%;
+    height: 90vw;
+  }
+  .homeContents01 .contentsDiv01 .imgDiv02{
+    width: 100%;
+    height: 90vw;
+  }
+  .homeContents01 .contentsDiv01 .contentsText{
+    flex-wrap :wrap;
+    bottom : 4vw;
+  }
+  .homeContents01 .contentsDiv01 span{
+    font-size : 2vw;
+    margin-bottom: 10px;
+  }
+  .homeContents01 .contentsDiv01 h2{
+    line-height: 3.5vw;
+    text-align: center;
+    width : 40vw;
+    font-size : 3.5vw;
+  }
+  .homeContents02 .contentsText {
+    flex-wrap : wrap;
+  }
+  .homeContents02 .contentsText span{
+    font-size : 2vw;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .homeContents02 .contentsText h2{
+    width : 45vw;
+    font-size : 4vw;
+  }
+  .homeContents02 .contentsText p{
+    font-size : 2vw;
+  }
+  .homeContents03{
+    height: 280vw;
+  }
+  .homeContents03 .contentsDiv03{
+    width : 90%;
+    height: 280vw;
+    flex-direction: column;
+  }
+  .homeContents03 .contentsDiv03 .imgDiv01{
+    width : 100%;
+    height: 90vw;
+  }
+  .homeContents03 .contentsDiv03 .imgDiv02{
+    width : 100%;
+    height: 90vw;
+  }
+  .homeContents03 .contentsDiv03 .imgDiv03{
+    width : 100%;
+    height: 90vw;
+  }
+  .homeContents03 .contentsDiv03 .gradientDiv{
+    height: 90vw;
+  }
+  .homeContents03 .contentsDiv03 .contentsText{
+    bottom : 5vw;
+  }
+  .homeContents03 .contentsDiv03 h2{
+    font-size : 3vw;
+  }
+  .homeContents03 .contentsDiv03 span{
+    font-size: 2vw;
+  }
+  .homeContents04{
+    height: 55vw;
+    justify-content: space-around;
+    padding : 2vw 0 7vw 0;
+  }
+  .homeContents04 .contentsTitle h2{
+    font-size : 3vw;
+  }
+  .homeContents04 .contentsTitle span{
+    font-size : 2vw;
+  }
+  .homeContents04 .contentsDiv04{
+    width : 100%;
+  }
+  .homeContents04 .contentsDiv04 .contentsText h2{
+    font-size : 2.5vw;
+  }
+  .homeContents04 .contentsDiv04 .contentsText h3{
+    font-size : 1.7vw;
+  }
+  .homeContents04 .contentsDiv04 .contentsText span{
+    font-size : 2vw;
+  }
+  .contentsDiv04 .contentsText .priceText{
+    font-size : 2vw;
+    width: 10vw;
+  }
+  .contentsDiv04 .contentsText .priceText i{
+    font-size : 2vw;
+  }
+  .contentsDiv04 .contentsText .colorSelect span{
+    width : 2.5vw;
+    height: 2.5vw;
+  }
+}

@@ -6,14 +6,14 @@ export default function Home(props) {
   return (
     <div className="homeContainer">
       <div className="homeContainerWrap" >
-        <div className="homeMain"  style ={props.openCountry ? {zIndex : ""} : {zIndex : "999"}}>
+        <div className="homeMain"  style ={props.openCountry ? {zIndex : ""} : {zIndex : "9"}}>
           <div className="homeWrap">
-            <Link to="#" className="mainText">
+            <div className="mainText">
               <Link id="text1" to="#"><span>EMBERTON</span></Link>
-              <Link id="text2" to="#">FILL YOUR HOME WITH <br></br>ABSOLUTE 360˚ SOUND</Link>
+              <Link id="text2" to="#">FILL YOUR HOME WITH ABSOLUTE 360˚ SOUND</Link>
               <Link id="text3" to="#">Rock out but stay in with big-stage sound in a small frame</Link>
               <button className="button">GET IT NOW</button>
-            </Link>
+            </div>
           </div>
           <div className="gradientDiv">
           </div>
@@ -54,7 +54,7 @@ export default function Home(props) {
               MAJOR IV
           </span>
             <h2>
-              AN ICON, REBORN WITH<br></br> UNRIVALLED MARHHALL SOUND
+              AN ICON, REBORN WITH UNRIVALLED MARHHALL SOUND
             </h2>
             <p>Take some time for yourself and your music</p>
             <button className="button">GET IT NOW</button>
@@ -67,7 +67,7 @@ export default function Home(props) {
             <Link to="#" className="imgDiv01">
               <div className="contentsText">
                 <span>MAJOR III BLUETOOTH</span>
-                <h2>THE MODERN GO-<br></br>TO CLASSIC</h2>
+                <h2>THE MODERN GO-TO CLASSIC</h2>
               </div>
               <div className="gradientDiv">
               </div>
@@ -75,7 +75,7 @@ export default function Home(props) {
             <Link to="#" className="imgDiv02">
               <div className="contentsText">
                 <span>SPEAKER POWER CABLE</span>
-                <h2>PLUG IN AND <br></br> CHILL OUT</h2>
+                <h2>PLUG IN AND CHILL OUT</h2>
               </div>
               <div className="gradientDiv">
               </div>
@@ -83,7 +83,7 @@ export default function Home(props) {
             <Link to="#" className="imgDiv03">
               <div className="contentsText">
                 <span>MONITOR II A.N.C.</span>
-                <h2>RETREAT INTO<br></br> YOUR MUSIC</h2>
+                <h2>RETREAT INTO YOUR MUSIC</h2>
               </div>
               <div className="gradientDiv">
               </div>

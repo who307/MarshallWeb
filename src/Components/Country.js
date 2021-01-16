@@ -62,19 +62,11 @@ export default function Coutry(props) {
       languageOpenFunc()
     }
   }
-  // colose버튼 스타일
-  const _closeBtn = {
-    cursor: "pointer",
-    color: "white",
-    fontSize: "2vw",
-    position: "absolute",
-    right: "3vw",
-    top: "1vw"
-  }
+  
   return (
 
     <div className="countryDiv" style ={props.openCountry ? {} : {height : "0"}}>
-      <FontAwesomeIcon onClick={closeBtn} style={_closeBtn} icon={faTimes} />
+      <FontAwesomeIcon className ="_closeBtn" onClick={closeBtn} icon={faTimes} />
 
       <div className="countryWrap">
         <h2>SELECT COUNTRY AND LANGUAGE</h2>
@@ -108,7 +100,7 @@ export default function Coutry(props) {
               <button name="language" onClick={selectCountry} value="SPANISH">SPANISH</button>
             </div>
           </div>
-          <button onClick={confirmBtn} className="button">CONFIM</button>
+          <button onClick={confirmBtn} className="button">CONFIRM</button>
         </div>
         <Link to="#"><span>IF YOUR COUNTRY IS NOT VISIBLE IN THE LIST CLICK HERE TO VISIT OUR COUNTRY <br></br>DIRECTORY</span></Link>
       </div>

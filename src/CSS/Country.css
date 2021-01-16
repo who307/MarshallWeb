@@ -9,8 +9,16 @@
   position: relative;
   transition: height 0.4s;
 }
+._closeBtn {
+  cursor: pointer;
+  color: white;
+  font-size: 2vw;
+  position: absolute;
+  right: 3vw;
+  top: 1vw;
+}
 .countryDiv .countryWrap{
-  width: 60%;
+  width: 80%;
   height: 14vw;
   display: flex;
   flex-direction: column;
@@ -45,7 +53,7 @@
   border-bottom: 3px solid #8f8e8e;
 }
 .countryDiv .countryWrap .selectDiv{
-  width : 75%;
+  width : 70%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -56,11 +64,10 @@
   position: relative;
 }
 .countryDiv .countryWrap .selectDiv .selectWrap{
-  width : 15vw;
+  width : 20vw;
   font-size : 1.3vw;
   font-weight: bold;
   padding : 0.7vw 0.8vw;
-  margin : 0 0.4vw;
   outline : none;
   cursor: pointer;
   background : white;
@@ -71,9 +78,8 @@
   position: relative;
 }
 .countryDiv .countryWrap .selectDiv .countryDropDown, .languageDropDown{
-  width : 15vw;
+  width : 20vw;
   padding : 0.7vw 0.8vw;
-  margin : 0 0.4vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -85,7 +91,7 @@
   left: 0;
 }
 .countryDiv .countryWrap .selectDiv button{
-  width : 100%;
+  width : 15vw;
   padding : 0.3vw 0;
   border : none;
   outline: none;
@@ -95,7 +101,54 @@
   font-size : 0.9vw;
 }
 .countryDiv .countryWrap .selectDiv .button{
+  width : 10vw;
   padding : 0.8vw 2.8vw;
 }
-
 /* 지역설정 메뉴 end */
+
+/* 모바일 Country */
+@media screen and (max-width: 1024px){
+
+  .countryDiv{
+    height: 30vw;
+  }
+  .countryDiv .countryWrap{
+    width : 100%;
+    height: 25vw;
+    justify-content: space-around;
+  }
+  .countryDiv .countryWrap h2{
+    font-size : 3vw;
+  }
+  .countryDiv .countryWrap span{
+    font-size : 1.5vw;
+    line-height: 3vw;
+  }
+  ._closeBtn {
+    font-size : 3.5vw;
+  }
+  .countryDiv .countryWrap .selectDiv{
+    width : 85%;
+  }
+  .countryDiv .countryWrap .selectDiv .selectWrap{
+    width : 25vw;
+    font-size : 2vw;
+    padding : 1.2vw 2vw;
+  }
+  .countryDiv .countryWrap a{
+    font-size : 1.5vw;
+    line-height: 3vw;
+  }
+  .countryDiv .countryWrap .selectDiv button{
+    padding : 0 1.2vw;
+    font-size : 1.9vw;
+  }
+  .countryDiv .countryWrap .selectDiv .button{
+    width : 18vw;
+    padding : 1.1vw 2vw;
+  }
+  .countryDiv .countryWrap .selectDiv .countryDropDown, .languageDropDown{
+    width : 27.4vw;
+    top: 4vw;
+  }
+}

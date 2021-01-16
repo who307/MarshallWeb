@@ -11,6 +11,7 @@
 .App {
   font-family: 'HelveticaNeueLTPro-BdCn';
   letter-spacing: -0.3px;
+  background : black;
 }
 a{
   color : black;
@@ -23,4 +24,15 @@ a{
   font-weight: bold;
   font-size : 0.8vw;
   background : white;
+}
+@media screen and (max-width: 1024px){
+  .button {
+    padding : 1.5vw 3vw;
+    border :none;
+    outline : none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size : 0.8vw;
+    background : white;
+  }
 }
