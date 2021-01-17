@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/MarshallWeb/static/css/main.c1a50934.chunk.css",
-    "main.js": "/MarshallWeb/static/js/main.0aa29025.chunk.js",
-    "main.js.map": "/MarshallWeb/static/js/main.0aa29025.chunk.js.map",
+    "main.css": "/MarshallWeb/static/css/main.9a666fdf.chunk.css",
+    "main.js": "/MarshallWeb/static/js/main.a8bbfbf5.chunk.js",
+    "main.js.map": "/MarshallWeb/static/js/main.a8bbfbf5.chunk.js.map",
     "runtime-main.js": "/MarshallWeb/static/js/runtime-main.faf0e46c.js",
     "runtime-main.js.map": "/MarshallWeb/static/js/runtime-main.faf0e46c.js.map",
     "static/js/2.2af1d98d.chunk.js": "/MarshallWeb/static/js/2.2af1d98d.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.c01db83e.chunk.js": "/MarshallWeb/static/js/3.c01db83e.chunk.js",
     "static/js/3.c01db83e.chunk.js.map": "/MarshallWeb/static/js/3.c01db83e.chunk.js.map",
     "index.html": "/MarshallWeb/index.html",
-    "static/css/main.c1a50934.chunk.css.map": "/MarshallWeb/static/css/main.c1a50934.chunk.css.map",
+    "static/css/main.9a666fdf.chunk.css.map": "/MarshallWeb/static/css/main.9a666fdf.chunk.css.map",
     "static/js/2.2af1d98d.chunk.js.LICENSE.txt": "/MarshallWeb/static/js/2.2af1d98d.chunk.js.LICENSE.txt",
     "static/media/App.css": "/MarshallWeb/static/media/HelveticaNeueLTPro-BdCn.fdd3df1d.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.faf0e46c.js",
     "static/js/2.2af1d98d.chunk.js",
-    "static/css/main.c1a50934.chunk.css",
-    "static/js/main.0aa29025.chunk.js"
+    "static/css/main.9a666fdf.chunk.css",
+    "static/js/main.a8bbfbf5.chunk.js"
   ]
 }
