@@ -25,7 +25,7 @@ function App() {
   let [openMobile, setOpenMobile] = useState(false);
   useEffect( () =>{
     if(openMobile === true)
-    document.querySelector("html").style = ("overflow-y : hidden")
+    document.querySelector("html").style = ("overflow-y : hidden; position:fixed")
     else
     document.querySelector("html").style = ("")
 
