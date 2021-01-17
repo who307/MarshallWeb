@@ -12,7 +12,7 @@ export default function Header(props) {
     document.querySelector("html").scrollTo(0, 0);
   }
 
-  // 네비게이션 표시 Country캄포넌트가 오픈상태면 함수실행x
+  // 네비게이션 표시 Country컴포넌트가 오픈상태면 함수실행x
   // 스크롤메소드 useEffect() clean-up
   useEffect(() => {
     window.addEventListener("scroll", scrollEvent);

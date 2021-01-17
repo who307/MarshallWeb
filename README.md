@@ -1,4 +1,4 @@
-## Marshall 웹사이트 메인페이지 리액트 클론코딩 
+## Marshall 웹사이트 메인페이지 react
 ### https://www.marshallheadphones.com/kr/en/
 ### https://who307.github.io/MarshallWeb/
 
