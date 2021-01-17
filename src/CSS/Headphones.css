@@ -7,10 +7,9 @@
 .headPhoneMain{
   width : 100%;
   height: 40vw;
-  background :url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw1a4324d2/images/categories/headphones/monitor-ii-anc/desktop/HERO-Mon-II-ANC-Desktop-1927x800-2.jpg?sw=2000&sh=2000&sm=fit)no-repeat;
-  background-size : 100% 100%;
   cursor: pointer;
   position: relative;
+  transition: background 0.5s;
 }
 .headPhoneMain .gradientDiv{
   width : 100%;
@@ -27,7 +26,7 @@
   justify-content: center;
   align-items: flex-end;
   position: absolute;
-  bottom : 5vw;
+  bottom : 6vw;
 }
 .headPhoneMainWrap .mainText {
   display: flex;
@@ -45,43 +44,44 @@
 }
 
 .headPhoneWrap .mainText #text1{
-  width: 40vw;
+  width: 45vw;
   font-size : 3.5vw;
   letter-spacing: -0.3vw;
 }
-.headPhoneContainer .headPhoneContants{
+ .headPhoneContants{
   width : 100%;
-  height : 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background : black;
 }
-.headPhoneContainer .headPhoneCategory{
-  width :80%;
+ .headPhoneCategory{
+  width :73%;
   height: 6vw;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 1.5vw;
 }
-.headPhoneContainer .headPhoneCategory h3{
+ .headPhoneCategory h3{
   color : #777;
   font-weight: bold;
+  margin-right : 1vw;
 }
-.headPhoneContainer .headPhoneCategory div{
+ .headPhoneCategory div{
   border-left : 0.1vw solid white;
-  padding : 0.3vw 0vw 0.3vw 1vw;
+  padding : 0.2vw 1vw;
   color : white;
 }
-.headPhoneContainer .headPhoneCategory div span{
+ .headPhoneCategory div span{
   font-weight: bold;
   cursor: pointer;
   transition: color 0.4s;
 }
-.headPhoneContainer .headPhoneCategory div span:hover{
+ .headPhoneCategory div span:hover{
   color : #777
 }
-.headPhoneContainer .headPhoneCategory div span::after{
+ .headPhoneCategory div span::after{
   width : 100%;
   content: "";
   display: flex;
@@ -91,6 +91,121 @@
   opacity: 0;
   transition: opacity 0.4s;
 } 
-.headPhoneContainer .headPhoneCategory div:hover span::after{
+ .headPhoneCategory div:hover span::after{
   opacity: 1;
+}
+ .headPhoneProduct{
+  width : 100%;
+  padding-bottom : 4vw;
+  background: -webkit-radial-gradient(bottom, #bbb, #636363);
+}
+ .headPhoneProduct .headPhoneTitle{
+  height: 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding : 5vw 5vw 2vw 5vw;
+  text-align: center;
+}
+ .headPhoneProduct .headPhoneTitle h2{
+  font-size : 2.5vw;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+ .headPhoneProduct .headPhoneTitle span{
+  width : 55vw;
+  line-height: 1.8vw;
+  font-size : 1.5vw;
+}
+ .headPhoneProduct .headPhoneList {
+  padding : 0 5vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.headPhoneList .productWrap{
+  width : 18vw;
+  height: 26vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.productWrap .imgLink {
+  width : 100%;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+.productWrap .imgDiv {
+  width : 100%;
+  height: 25vw;
+}
+.productWrap .productText {
+  height: 6vw;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.productWrap .productText .productName {
+  text-align: center;
+}
+.productWrap .productText .productName h2{
+  font-size : 1.5vw;
+  font-weight: bold;
+  margin-bottom: 0.5vw;
+}
+.productWrap .productText .productStock {
+  font-weight: bold;
+  font-size : 1.2vw;
+  margin-bottom: 0.5vw;
+}
+.productWrap .productText .priceText {
+  width: 5vw;
+  display: flex;
+  justify-content: space-around;
+}
+.productWrap .productText .priceText i{
+  font-size : 1.2vw;
+}
+.productWrap .productText .priceText span{
+  font-size : 1.2vw;
+  font-weight: bold;
+}
+/* 모바일 HeadPhone */
+@media screen and (max-width: 1024px){
+  .headPhoneContainer {
+    position: relative;
+    top : 8vw;
+  }
+  .headPhoneWrap .mainText #text1{
+    width: 37vw;
+    font-size : 4vw;
+  }
+  .headPhoneCategory {
+    font-size : 1.7vw;
+  }
+  .headPhoneProduct .headPhoneTitle h2{
+    font-size : 3vw;
+  }
+  .headPhoneProduct .headPhoneTitle span{
+    width : 80vw;
+    font-size : 1.8vw;
+  }
+  .headPhoneList .productWrap{
+    width : 20vw;
+  }
+  .productWrap .productText .productName h2{
+    font-size: 2vw;
+  }
+  .productWrap .productText .priceText span{
+    font-size : 1.6vw;
+  }
+  .productWrap .productText .priceText i{
+    font-size: 1.6vw;
+  }
 }

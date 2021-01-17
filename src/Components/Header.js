@@ -47,7 +47,7 @@ export default function Header(props) {
     props.setOpenMobile(!props.openMobile)
     props.setOpenCountry(false)
   }
-  
+
   const mobileCountry = () => {
     props.setOpenMobile(!props.openMobile)
     props.setOpenCountry(!props.openCountry)
@@ -59,13 +59,13 @@ export default function Header(props) {
       <div className="headerContainer" style={props.openCountry ? { position: "absolute", top: "19vw", zIndex: "99" } : { position: "absolute", top: "-1vw", zIndex: "9999" }}>
         <div className="hiddenCategory" ref={_hidden}>
           <div className="hiddenWrap">
-            <Link className="hiddenLogo" to="/home"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
+            <Link className="hiddenLogo" to="/MarshallWeb"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
             <div className="categoryWrapH">
               <ul className="categoryMenuH">
                 <li><Link to="/headphones">HEADPHONES</Link></li>
-                <li><Link to="/speakers">SPEAKERS</Link></li>
-                <li><Link to="/accessories">ACCESSORIES</Link></li>
-                <li><Link to="/backstage">BACKSTAGE</Link></li>
+                <li><Link to="#">SPEAKERS</Link></li>
+                <li><Link to="#">ACCESSORIES</Link></li>
+                <li><Link to="#">BACKSTAGE</Link></li>
               </ul>
               <div className="iconDivH">
                 <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faSearch} />
@@ -88,14 +88,14 @@ export default function Header(props) {
               <FontAwesomeIcon icon={faChevronDown} />
             </div>
           </div>
-          <Link to="/home"><img className="headerLogo" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
+          <Link to="/MarshallWeb"><img className="headerLogo" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
           <div ref={_category} className="headerCategory">
             <div className="categoryWrap">
               <ul className="categoryMenu">
                 <li><Link to="/headphones">HEADPHONES</Link></li>
-                <li><Link to="/speakers">SPEAKERS</Link></li>
-                <li><Link to="/accessories">ACCESSORIES</Link></li>
-                <li><Link to="/backstage">BACKSTAGE</Link></li>
+                <li><Link to="#">SPEAKERS</Link></li>
+                <li><Link to="#">ACCESSORIES</Link></li>
+                <li><Link to="#">BACKSTAGE</Link></li>
               </ul>
               <div className="iconDiv">
                 <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faSearch} />
@@ -111,7 +111,7 @@ export default function Header(props) {
       {/* 모바일 버전  start */}
       <div className="headerMobile" >
         <div className="headerMobileWrap" style={props.openCountry ? { position: "absolute", top: "29vw" } : { position: "fixed", top: "0vw" }}>
-          <Link className="hiddenLogoM" to="/home"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
+          <Link className="hiddenLogoM" to="/MarshallWeb"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
           <div className="iconDivH">
             <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faSearch} />
             <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faQuestionCircle} />
@@ -123,12 +123,12 @@ export default function Header(props) {
           <div onClick={mobileOpen} className="closeBtn"><FontAwesomeIcon icon={faTimes} /></div>
           <div className="categoryWrapH">
             <ul className="categoryMenuH">
-              <li><Link to="/home">HOME</Link></li>
-              <li><Link to="/headphones">HEADPHONES</Link></li>
-              <li><Link to="/speakers">SPEAKERS</Link></li>
-              <li><Link to="/accessories">ACCESSORIES</Link></li>
-              <li><Link to="/backstage">BACKSTAGE</Link></li>
-              <li><Link to="/login">LOGIN</Link></li>
+              <li><Link onClick={mobileOpen} to="/MarshallWeb">HOME</Link></li>
+              <li><Link onClick={mobileOpen} to="/headphones">HEADPHONES</Link></li>
+              <li><Link onClick={mobileOpen} to="#">SPEAKERS</Link></li>
+              <li><Link onClick={mobileOpen} to="#">ACCESSORIES</Link></li>
+              <li><Link onClick={mobileOpen} to="#">BACKSTAGE</Link></li>
+              <li><Link onClick={mobileOpen} to="#">LOGIN</Link></li>
             </ul>
             <div className="languageDivH">
               <div className="languageWrapH" onClick={mobileCountry}>

@@ -52,15 +52,15 @@ export default function Footer(props) {
               <h2>PRESS</h2>
               <li><Link to="#">PRESS ROOM</Link></li>
             </ul>
-            </div>
-            <div className="footerLogin">
-              <h1>MY ACOUNT</h1>
-              <span>LOGIN OR CREATE AN ACCOUNT</span>
-              <div className = "footerbuttonDiv">
+          </div>
+          <div className="footerLogin">
+            <h1>MY ACOUNT</h1>
+            <span>LOGIN OR CREATE AN ACCOUNT</span>
+            <div className="footerbuttonDiv">
               <Link className="button" to="login">LOGIN</Link>
               <Link className="button" to="CreateAccount">CREATE ACCOUNT</Link>
             </div>
-            </div>
+          </div>
         </div>
         <div className="footerPaymentsDiv">
           <h2>SAFE PAYMENTS</h2>
@@ -82,15 +82,15 @@ export default function Footer(props) {
               <h2>©2020 ZOUND INDUSTRIES. ALL RIGHTS RESERVED. ORG. NR 5567574610</h2>
             </div>
             <div className="footerLogo">
-              <Link to="home">
+              <Link to="/">
                 <img src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg"></img>
               </Link>
             </div>
             <div className="footerIcons">
-              <Link to="spotify"><div><FontAwesomeIcon style={{ cursor: "pointer", }} icon={faSpotify} /></div></Link>
-              <Link to="facebook"><FontAwesomeIcon style={{ cursor: "pointer" }} icon={faFacebook} /></Link>
-              <Link to="instargram"><FontAwesomeIcon style={{ cursor: "pointer" }} icon={faInstagram} /></Link>
-              <Link to="pinterest"><FontAwesomeIcon style={{ cursor: "pointer" }} icon={faPinterest} /></Link>
+              <Link to="/MarshallWeb"><div><FontAwesomeIcon style={{ cursor: "pointer", }} icon={faSpotify} /></div></Link>
+              <Link to="/MarshallWeb"><FontAwesomeIcon style={{ cursor: "pointer" }} icon={faFacebook} /></Link>
+              <Link to="/MarshallWeb"><FontAwesomeIcon style={{ cursor: "pointer" }} icon={faInstagram} /></Link>
+              <Link to="/MarshallWeb"><FontAwesomeIcon style={{ cursor: "pointer" }} icon={faPinterest} /></Link>
             </div>
           </div>
         </div>

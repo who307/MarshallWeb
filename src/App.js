@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link, Route, BrowserRouter as Router } from "react-router-dom";
+import { Link, Route, BrowserRouter, Switch, browserHistory } from "react-router-dom";
+import NoMatch from "./Components/NoMatch"
 import Country from './Components/Country';
 import Header from './Components/Header';
 import Home from './Components/Home';
@@ -33,34 +34,37 @@ function App() {
   }, [openMobile])
 
   return (
-    <Router>
-      <div className="App">
-        <Header openCountry={openCountry}
-          setOpenCountry={setOpenCountry}
-          country={country}
-          openMobile={openMobile}
-          setOpenMobile={setOpenMobile} />
+    <div className="App">
+      <BrowserRouter>
+      <Header openCountry={openCountry}
+        setOpenCountry={setOpenCountry}
+        country={country}
+        openMobile={openMobile}
+        setOpenMobile={setOpenMobile} />
 
-        <Country openCountry={openCountry}
-          setOpenCountry={setOpenCountry}
-          setCountry={setCountry} />
-        {/* <Route path ="/home" component={Home} />
-        <Route path ="/headphones" component={Headphones} /> */}
-        {/* <Home
-          openCountry={openCountry} /> */}
+      <Country openCountry={openCountry}
+        setOpenCountry={setOpenCountry}
+        setCountry={setCountry} />
 
-        <Headphones
-        openCountry = {openCountry}/>
+        <Switch>
+          <Route exact path="/MarshallWeb" component={Home}
+            render={() => <Home openCountry={openCountry} />}
+          />
+          <Route path="/headphones" component={Headphones}
+            render={() => <Headphones openCountry={openCountry} />}
+          />
+          <Route component={NoMatch} />
+        </Switch>
 
-        {openCookie === true && (
-          <Cookie
-            openCookie={openCookie}
-            setOpenCookie={setOpenCookie} />
-        )}
-        <Footer
+      {openCookie === true && (
+        <Cookie
+          openCookie={openCookie}
+          setOpenCookie={setOpenCookie} />
+      )}
+      <Footer
           openCountry={openCountry} />
-      </div>
-    </Router>
+        </BrowserRouter>
+    </div>
   );
 }
 

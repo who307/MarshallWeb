@@ -57,16 +57,16 @@ export default function Coutry(props) {
       countryOpenFunc()
     else if (!openCountry && openLang)
       languageOpenFunc()
-    else if(openCountry && openLang){
+    else if (openCountry && openLang) {
       countryOpenFunc()
       languageOpenFunc()
     }
   }
-  
+
   return (
 
-    <div className="countryDiv" style ={props.openCountry ? {} : {height : "0"}}>
-      <FontAwesomeIcon className ="_closeBtn" onClick={closeBtn} icon={faTimes} />
+    <div className="countryDiv" style={props.openCountry ? {} : { height: "0" }}>
+      <FontAwesomeIcon className="_closeBtn" onClick={closeBtn} icon={faTimes} />
 
       <div className="countryWrap">
         <h2>SELECT COUNTRY AND LANGUAGE</h2>
@@ -76,7 +76,7 @@ export default function Coutry(props) {
             <div className="selectWrap" onClick={countryOpenFunc}>{dropMenu.country}
               <FontAwesomeIcon style={openCountry ? { transform: "rotate(180deg)" } : { transform: "rotate(0deg)" }} icon={faChevronDown} />
             </div>
-            <div className="countryDropDown" style={openCountry ? props.openCountry ? {zIndex : "99", opacity : "1", transition : "opacity 0.3s"} : {opacity : "0"} : {display :"none"}}>
+            <div className="countryDropDown" style={openCountry ? props.openCountry ? { zIndex: "99", opacity: "1", transition: "opacity 0.3s" } : { opacity: "0" } : { display: "none" }}>
               <button name="country" onClick={selectCountry} value="CANADA">CANADA</button>
               <button name="country" onClick={selectCountry} value="FRANCE">FRANCE</button>
               <button name="country" onClick={selectCountry} value="GERMANY">GERMANY</button>
@@ -95,7 +95,7 @@ export default function Coutry(props) {
             <div className="selectWrap" onClick={languageOpenFunc}>{dropMenu.language}
               <FontAwesomeIcon style={openLang ? { transform: "rotate(180deg)" } : { transform: "rotate(0deg)" }} icon={faChevronDown} />
             </div>
-            <div className="languageDropDown" style={openLang ? props.openCountry ? {zIndex : "99", opacity : "1", transition : "opacity 0.3s"} : {opacity : "0"} : {display :"none"} }>
+            <div className="languageDropDown" style={openLang ? props.openCountry ? { zIndex: "99", opacity: "1", transition: "opacity 0.3s" } : { opacity: "0" } : { display: "none" }}>
               <button name="language" onClick={selectCountry} value="ENGLISH">ENGLISH</button>
               <button name="language" onClick={selectCountry} value="SPANISH">SPANISH</button>
             </div>
