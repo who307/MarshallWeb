@@ -25,11 +25,11 @@ function App() {
   let [openMobile, setOpenMobile] = useState(false);
   useEffect( () =>{
     if(openMobile === true)
-    document.querySelector("html").style = ("overflow-y : hidden; position:fixed")
+    document.querySelector("html").style = ("width : 100%; height : 100%; overflow-y : hidden; touch-action : none;")
     else
-    document.querySelector("html").style = ("")
+    document.querySelector("html").style = ("position: relative;")
 
-  })
+  },[openMobile])
   
   return (
     <Router>
