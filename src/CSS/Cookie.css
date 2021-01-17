@@ -15,7 +15,6 @@
 }
 ._linkStyle {
   text-decoration: underline;
-  font-weight : bold;
 }
  ._closeBtn {
   cursor: pointer;
@@ -31,13 +30,13 @@
 @media screen and (max-width: 1024px){
 
   ._cookieContainer{
-    height : 15vw;
+    height : 11vw;
     font-size : 2vw;
-    line-height: 3.5vw;
+    line-height: 3vw;
     font-weight : bold;
   }
   ._cookieWrap {
-    padding : 2vw 5vw;
+    padding : 1vw 5vw;
   }
   ._closeBtn{
     font-size : 4vw;

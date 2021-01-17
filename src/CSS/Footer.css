@@ -84,10 +84,12 @@
   font-size : 1.25vw;
   font-weight: bold;
 }
-.footerWrap .footerMenuDiv .footerMenu a{
+.footerWrap .footerMenuDiv .footerMenu li {
+  padding : 0.3vw 0;
+}
+.footerWrap .footerMenuDiv .footerMenu li a{
   color : #999999;
   font-weight: bold;
-  padding : 0.4vw 0;
   font-size : 1vw;
 }
 .footerWrap .footerMenuDiv .footerMenu a:hover{
@@ -257,22 +259,20 @@
     flex-direction: column;
   }
   .footerMenuDiv .footerMenuWrap{
-    width : 80vw;
+    width : 53vw;
     height: 70vw;
     flex-wrap: wrap;
     padding : 5vw;
   }
-  .footerWrap .footerMenuDiv .footerMenu{
-    width : 30vw;
-
-  }
   .footerWrap .footerMenuDiv .footerMenu h2{
-    font-size : 2.5vw;
+    font-size : 2vw;
     margin-bottom : 2vw;
   }
-  .footerWrap .footerMenuDiv .footerMenu a{
-    font-size: 2vw;
+  .footerWrap .footerMenuDiv .footerMenu li{
     padding : 1vw 0;
+  }
+  .footerWrap .footerMenuDiv .footerMenu li a{
+    font-size: 1.5vw;
   }
   .footerWrap .footerMenuDiv .footerLogin{
     width : 100%;

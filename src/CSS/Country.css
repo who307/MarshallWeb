@@ -121,7 +121,7 @@
     font-size : 3vw;
   }
   .countryDiv .countryWrap span{
-    font-size : 1.5vw;
+    font-size : 2vw;
     line-height: 3vw;
   }
   .countryDiv ._closeBtn {
@@ -133,22 +133,23 @@
   .countryDiv .countryWrap .selectDiv .selectWrap{
     width : 25vw;
     font-size : 2vw;
-    padding : 1.2vw 2vw;
+    padding : 2vw 2vw;
   }
   .countryDiv .countryWrap a{
     font-size : 1.5vw;
     line-height: 3vw;
   }
   .countryDiv .countryWrap .selectDiv button{
-    padding : 0 1.2vw;
+    padding : 0.5vw 1.2vw;
     font-size : 1.9vw;
   }
   .countryDiv .countryWrap .selectDiv .button{
-    width : 18vw;
-    padding : 1.1vw 2vw;
+    width : 20vw;
+    padding :1.9vw 3vw;
+    text-align: center;
   }
   .countryDiv .countryWrap .selectDiv .countryDropDown, .languageDropDown{
     width : 27.4vw;
-    top: 4vw;
+    top: 5vw;
   }
 }

@@ -26,31 +26,32 @@ export default function Footer(props) {
         </div>
         <div className="footerMenuDiv">
           <div className="footerMenuWrap">
-            <div className="footerMenu">
+            <ul className="footerMenu">
               <h2>CUSTOMER SERVICE</h2>
-              <Link to="#">CONTACT US</Link>
-              <Link to="#">BUSINESS CUSTOMERS</Link>
-              <Link to="#">DELIVERY TIMES</Link>
-              <Link to="#">EXCHANGE AND RETURN</Link>
-              <Link to="#">USER MANUALS</Link>
-              <Link to="#">HELP CENTRE</Link>
-              <Link to="#">SHIPPING UPDATE - COVID-19</Link>
-            </div>
-            <div className="footerMenu">
-              <h2>SECURITY</h2>
-              <Link to="#">TERMS OF USE</Link>
-              <Link to="#">TERMS OF PURCHASE</Link>
-              <Link to="#">PAYMENT METHODS</Link>
-              <Link to="#">DECLARATION OF CONFORMITY</Link>
-              <Link to="#">GLOBAL WARRANTY</Link>
-              <Link to="#">PRIVACY POLICY</Link>
-              <Link to="#">GDPR</Link>
-              <Link to="#">COOKIES</Link>
-            </div>
-            <div className="footerMenu">
+              <li><Link to="#">CONTACT US</Link></li>
+              <li><Link to="#">BUSINESS CUSTOMERS</Link></li>
+              <li><Link to="#">DELIVERY TIMES</Link></li>
+              <li><Link to="#">EXCHANGE AND RETURN</Link></li>
+              <li><Link to="#">USER MANUALS</Link></li>
+              <li><Link to="#">HELP CENTRE</Link></li>
+              <li><Link to="#">SHIPPING UPDATE - COVID-19</Link></li>
+            </ul>
+            <ul className="footerMenu">
+              <h2>POLICIES</h2>
+              <li><Link to="#">SECURITY</Link></li>
+              <li><Link to="#">TERMS OF USE</Link></li>
+              <li><Link to="#">TERMS OF PURCHASE</Link></li>
+              <li><Link to="#">PAYMENT METHODS</Link></li>
+              <li><Link to="#">DECLARATION OF CONFORMITY</Link></li>
+              <li><Link to="#">GLOBAL WARRANTY</Link></li>
+              <li><Link to="#">PRIVACY POLICY</Link></li>
+              <li><Link to="#">GDPR</Link></li>
+              <li><Link to="#">COOKIES</Link></li>
+            </ul>
+            <ul className="footerMenu">
               <h2>PRESS</h2>
-              <Link to="#">PRESS ROOM</Link>
-            </div>
+              <li><Link to="#">PRESS ROOM</Link></li>
+            </ul>
             </div>
             <div className="footerLogin">
               <h1>MY ACOUNT</h1>
