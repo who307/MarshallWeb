@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/MarshallWeb/static/css/main.3180f572.chunk.css",
-    "main.js": "/MarshallWeb/static/js/main.1fefde04.chunk.js",
-    "main.js.map": "/MarshallWeb/static/js/main.1fefde04.chunk.js.map",
-    "runtime-main.js": "/MarshallWeb/static/js/runtime-main.fd0fcb8b.js",
-    "runtime-main.js.map": "/MarshallWeb/static/js/runtime-main.fd0fcb8b.js.map",
-    "static/js/2.2af1d98d.chunk.js": "/MarshallWeb/static/js/2.2af1d98d.chunk.js",
-    "static/js/2.2af1d98d.chunk.js.map": "/MarshallWeb/static/js/2.2af1d98d.chunk.js.map",
-    "static/js/3.db776976.chunk.js": "/MarshallWeb/static/js/3.db776976.chunk.js",
-    "static/js/3.db776976.chunk.js.map": "/MarshallWeb/static/js/3.db776976.chunk.js.map",
+    "main.css": "/MarshallWeb/static/css/main.27f8a512.chunk.css",
+    "main.js": "/MarshallWeb/static/js/main.700881fc.chunk.js",
+    "main.js.map": "/MarshallWeb/static/js/main.700881fc.chunk.js.map",
+    "runtime-main.js": "/MarshallWeb/static/js/runtime-main.fd79c612.js",
+    "runtime-main.js.map": "/MarshallWeb/static/js/runtime-main.fd79c612.js.map",
+    "static/js/2.f3e156eb.chunk.js": "/MarshallWeb/static/js/2.f3e156eb.chunk.js",
+    "static/js/2.f3e156eb.chunk.js.map": "/MarshallWeb/static/js/2.f3e156eb.chunk.js.map",
+    "static/js/3.857b996c.chunk.js": "/MarshallWeb/static/js/3.857b996c.chunk.js",
+    "static/js/3.857b996c.chunk.js.map": "/MarshallWeb/static/js/3.857b996c.chunk.js.map",
     "index.html": "/MarshallWeb/index.html",
-    "static/css/main.3180f572.chunk.css.map": "/MarshallWeb/static/css/main.3180f572.chunk.css.map",
-    "static/js/2.2af1d98d.chunk.js.LICENSE.txt": "/MarshallWeb/static/js/2.2af1d98d.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/MarshallWeb/static/media/HelveticaNeueLTPro-BdCn.fdd3df1d.otf"
+    "static/css/main.27f8a512.chunk.css.map": "/MarshallWeb/static/css/main.27f8a512.chunk.css.map",
+    "static/js/2.f3e156eb.chunk.js.LICENSE.txt": "/MarshallWeb/static/js/2.f3e156eb.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/MarshallWeb/static/media/HelveticaNeueLTPro-BdCn.fdd3df1d.otf"
   },
   "entrypoints": [
-    "static/js/runtime-main.fd0fcb8b.js",
-    "static/js/2.2af1d98d.chunk.js",
-    "static/css/main.3180f572.chunk.css",
-    "static/js/main.1fefde04.chunk.js"
+    "static/js/runtime-main.fd79c612.js",
+    "static/js/2.f3e156eb.chunk.js",
+    "static/css/main.27f8a512.chunk.css",
+    "static/js/main.700881fc.chunk.js"
   ]
 }
