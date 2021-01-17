@@ -5,7 +5,6 @@ import '../CSS/Home.css';
 export default function Home(props) {
   return (
     <div className="homeContainer">
-      <div className="homeContainerWrap" >
         <div className="homeMain"  style ={props.openCountry ? {zIndex : ""} : {zIndex : "9"}}>
           <div className="homeWrap">
             <div className="mainText">
@@ -184,6 +183,5 @@ export default function Home(props) {
           </div>
         </article>
       </div>
-    </div>
   )
 }

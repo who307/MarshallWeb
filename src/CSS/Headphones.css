@@ -1,0 +1,96 @@
+.headPhoneContainer {
+  width : 100%;
+  height: 100%;
+  
+}
+/* 헤드폰 메인 */
+.headPhoneMain{
+  width : 100%;
+  height: 40vw;
+  background :url(https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw1a4324d2/images/categories/headphones/monitor-ii-anc/desktop/HERO-Mon-II-ANC-Desktop-1927x800-2.jpg?sw=2000&sh=2000&sm=fit)no-repeat;
+  background-size : 100% 100%;
+  cursor: pointer;
+  position: relative;
+}
+.headPhoneMain .gradientDiv{
+  width : 100%;
+  height: 40vw;
+  transition: background 0.6s;
+  position: relative;
+}
+.headPhoneMain .gradientDiv:hover{
+  background: rgb(0, 0, 0, 0.15);
+}
+.headPhoneWrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom : 5vw;
+}
+.headPhoneMainWrap .mainText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow :column wrap;
+  text-align: center;
+  z-index: 3;
+}
+
+.headPhoneWrap .mainText a{
+ color : white;
+ font-weight: bold;
+ padding : 1vw 0 0.5vw 0;
+}
+
+.headPhoneWrap .mainText #text1{
+  width: 40vw;
+  font-size : 3.5vw;
+  letter-spacing: -0.3vw;
+}
+.headPhoneContainer .headPhoneContants{
+  width : 100%;
+  height : 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headPhoneContainer .headPhoneCategory{
+  width :80%;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5vw;
+}
+.headPhoneContainer .headPhoneCategory h3{
+  color : #777;
+  font-weight: bold;
+}
+.headPhoneContainer .headPhoneCategory div{
+  border-left : 0.1vw solid white;
+  padding : 0.3vw 0vw 0.3vw 1vw;
+  color : white;
+}
+.headPhoneContainer .headPhoneCategory div span{
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+.headPhoneContainer .headPhoneCategory div span:hover{
+  color : #777
+}
+.headPhoneContainer .headPhoneCategory div span::after{
+  width : 100%;
+  content: "";
+  display: flex;
+  border-bottom: 0.2vw solid #777;
+  position: relative;
+  top : 0.2vw;
+  opacity: 0;
+  transition: opacity 0.4s;
+} 
+.headPhoneContainer .headPhoneCategory div:hover span::after{
+  opacity: 1;
+}

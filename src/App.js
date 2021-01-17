@@ -3,6 +3,7 @@ import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 import Country from './Components/Country';
 import Header from './Components/Header';
 import Home from './Components/Home';
+import Headphones from "./Components/Headphones";
 import Footer from "./Components/Footer";
 import Cookie from "./Components/Cookie"
 import './CSS/App.css';
@@ -16,21 +17,21 @@ function App() {
   })
 
   // Country 컴포넌트 온오프
-  let [openCountry, setOpenCountry] = useState(true);
+  let [openCountry, setOpenCountry] = useState(false);
 
   // Cookie 컴포넌트 온오프
   let [openCookie, setOpenCookie] = useState(true);
 
   // 모바일 메뉴 오픈
   let [openMobile, setOpenMobile] = useState(false);
-  useEffect( () =>{
-    if(openMobile === true)
-    document.querySelector("html").style = ("width : 100%; height : 100%; overflow-y : hidden; touch-action : none;")
+  useEffect(() => {
+    if (openMobile === true)
+      document.querySelector("html").style = ("width : 100%; height : 100%; overflow-y : hidden; touch-action : none;")
     else
-    document.querySelector("html").style = ("position: relative;")
+      document.querySelector("html").style = ("position: relative;")
 
-  },[openMobile])
-  
+  }, [openMobile])
+
   return (
     <Router>
       <div className="App">
@@ -43,9 +44,13 @@ function App() {
         <Country openCountry={openCountry}
           setOpenCountry={setOpenCountry}
           setCountry={setCountry} />
+        {/* <Route path ="/home" component={Home} />
+        <Route path ="/headphones" component={Headphones} /> */}
+        {/* <Home
+          openCountry={openCountry} /> */}
 
-        <Home
-          openCountry={openCountry} />
+        <Headphones
+        openCountry = {openCountry}/>
 
         {openCookie === true && (
           <Cookie

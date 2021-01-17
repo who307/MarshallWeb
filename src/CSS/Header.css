@@ -59,15 +59,25 @@
 }
 .categoryWrapH li a{
   font-weight: bold;
-  font-size: 1.1vw;
   color : white;
   margin: 0 1.2vw;
-  border-bottom : 0.2vw solid rgb(185, 184, 184, 0);
+  transition: color 0.4s;
 }
-.categoryWrapH li a:hover {
-  color : rgb(185, 184, 184);
-  transition: color, border 0.5s;
-  border-bottom : 0.2vw solid rgb(185, 184, 184, 1);
+.categoryWrapH li a:hover{
+  color : rgb(167, 167, 167);
+}
+.categoryWrapH li a::after{
+  width :100%;
+  display: flex;
+  position: relative;
+  top :0.1vw;
+  content: "";
+  border-bottom : 0.2vw solid rgb(167, 167, 167);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.categoryWrapH li:hover a::after {
+  opacity: 1;
 }
 
 .iconDivH{
@@ -167,13 +177,23 @@
   font-weight: bold;
   color : white;
   margin: 0 1.2vw;
-  border-bottom : 0.2vw solid rgb(185, 184, 184, 0);
-
+  transition: color  0.4s;
 }
 .headerCategory li a:hover {
-  color :rgb(196, 192, 192);
-  transition: color, border 0.5s;
-  border-bottom : 0.2vw solid rgb(185, 184, 184, 1);
+  color : rgb(207, 207, 207);
+}
+.headerCategory li a::after {
+  content : "";
+  width : 100%;
+  display: flex;
+  position: relative;
+  top : 0.1vw;
+  opacity: 0;
+  border-bottom : 0.2vw solid rgb(216, 216, 216);
+  transition: opacity 0.4s;
+}
+.headerCategory li:hover a::after {
+  opacity: 1;
 }
 .headerCategory .iconDiv{
   width: 6.5vw;
@@ -240,6 +260,10 @@
     flex-direction: column;
     position: relative;
     top : 8vw;
+  }
+  .categoryWrapH li a::after{
+    border-bottom: none;
+
   }
   .categoryMenuH{
     display: flex;
