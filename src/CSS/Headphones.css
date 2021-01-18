@@ -188,7 +188,6 @@
 }
 .productWrap .productText .colorSelect{
   text-align: center;
-  margin-top : 0.7vw;
 }
 .productWrap .productText .colorSelect span{
   width: 1.2vw;
@@ -213,13 +212,15 @@
     height: 10vw;
     font-size : 2vw;
   }
-
   .headPhoneProduct .headPhoneTitle h2{
     font-size : 3vw;
   }
   .headPhoneProduct .headPhoneTitle span{
     width : 80vw;
     font-size : 1.8vw;
+  }
+  .newProduct{
+    line-height: 5.5vw;
   }
   .headPhoneList .productWrap{
     width : 20vw;
