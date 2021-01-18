@@ -124,6 +124,18 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.newProduct{
+  width : 5vw;
+  height : 5vw;
+  background : black;
+  border-radius: 50%;
+  position : absolute;
+  top : 7vw;
+  color :white;
+  font-size : 1vw;
+  text-align: center;
+  line-height: 5vw;
+}
 
 .headPhoneList .productWrap{
   width : 18vw;
@@ -133,6 +145,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 }
 .productWrap .imgLink {
   width : 100%;
@@ -176,6 +189,18 @@
   font-size : 1.2vw;
   font-weight: bold;
 }
+.productWrap .productText .colorSelect{
+  text-align: center;
+  margin-top : 0.7vw;
+}
+.productWrap .productText .colorSelect span{
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.2vw;
+  background-color: black;
+}
 /* 모바일 HeadPhone */
 @media screen and (max-width: 1024px){
   .headPhoneContainer {
@@ -198,6 +223,9 @@
   .headPhoneProduct .headPhoneTitle span{
     width : 80vw;
     font-size : 1.8vw;
+  }
+  .newProduct{
+    font-size : 0.5vw;
   }
   .headPhoneList .productWrap{
     width : 20vw;

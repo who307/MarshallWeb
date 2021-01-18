@@ -59,7 +59,7 @@ export default function Header(props) {
       <div className="headerContainer" style={props.openCountry ? { position: "absolute", top: "19vw", zIndex: "99" } : { position: "absolute", top: "-1vw", zIndex: "9999" }}>
         <div className="hiddenCategory" ref={_hidden}>
           <div className="hiddenWrap">
-            <Link className="hiddenLogo" to="/MarshallWeb"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
+            <Link className="hiddenLogo" to="/MarshallWeb" altt = "logo"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
             <div className="categoryWrapH">
               <ul className="categoryMenuH">
                 <li><Link to="/headphones">HEADPHONES</Link></li>
@@ -88,7 +88,7 @@ export default function Header(props) {
               <FontAwesomeIcon icon={faChevronDown} />
             </div>
           </div>
-          <Link to="/MarshallWeb"><img className="headerLogo" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
+          <Link to="/MarshallWeb"><img className="headerLogo" alt ="logo"src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
           <div ref={_category} className="headerCategory">
             <div className="categoryWrap">
               <ul className="categoryMenu">
@@ -111,7 +111,7 @@ export default function Header(props) {
       {/* 모바일 버전  start */}
       <div className="headerMobile" >
         <div className="headerMobileWrap" style={props.openCountry ? { position: "absolute", top: "29vw" } : { position: "fixed", top: "0vw" }}>
-          <Link className="hiddenLogoM" to="/MarshallWeb"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
+          <Link className="hiddenLogoM" to="/MarshallWeb" alt ="logo"><img className="headerLogoH" src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg" /></Link>
           <div className="iconDivH">
             <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faSearch} />
             <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faQuestionCircle} />

@@ -49,6 +49,7 @@ export default function Headphones(props) {
     price: "179.00",
     category: "onEar",
     blueTooth: "blueTooth",
+    new: <div className="newProduct">NEW</div>,
   },
   {
     id: 2,
@@ -77,6 +78,8 @@ export default function Headphones(props) {
     price: "179.00",
     category: "onEar",
     blueTooth: "blueTooth",
+    color: <div><Link to="#"><span style={{ background: "linear-gradient(90deg, #000000, #000000 50%, #000000 50%" }}></span></Link>
+      <Link to="#"><span style={{ background: "linear-gradient(90deg, #ffffff, #ffffff 50%, #ffffff 50%" }}></span></Link></div>,
   },
   {
     id: 5,
@@ -86,6 +89,10 @@ export default function Headphones(props) {
     price: "159.00",
     category: "inEar",
     blueTooth: "blueTooth",
+    color: <div><Link to="#"><span style={{ background: "black" }}></span></Link>
+      <Link to="#"><span style={{ background: "white" }}></span></Link>
+      <Link to="#"><span style={{ background: "#824820"}}></span></Link></div>,
+
   },
   {
     id: 6,
@@ -128,7 +135,9 @@ export default function Headphones(props) {
       default: setCategoryName("all");
     }
   }
+
   const headPhoneList = product.map((product) => {
+
     if (categoryNum === 0 ||
       categoryName === product.category ||
       categoryName === product.blueTooth ||
@@ -136,6 +145,7 @@ export default function Headphones(props) {
       return (
         <div key={product.id} className="productWrap">
           <Link className="imgLink" to="#">
+            {product.new}
             <div style={{ background: "url( " + product.productImg + ")no-repeat center/100%" }} className="imgDiv">
             </div>
           </Link>
@@ -147,6 +157,9 @@ export default function Headphones(props) {
             <div className="priceText">
               <i>$</i>
               <span>{product.price}</span>
+            </div>
+            <div className="colorSelect">
+              {product.color}
             </div>
           </Link>
         </div>
