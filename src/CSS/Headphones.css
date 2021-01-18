@@ -142,7 +142,6 @@
   height: 26vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
@@ -158,11 +157,9 @@
   height: 25vw;
 }
 .productWrap .productText {
-  height: 6vw;
   display : flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .productWrap .productText .productName {
   text-align: center;
@@ -224,11 +221,10 @@
     width : 80vw;
     font-size : 1.8vw;
   }
-  .newProduct{
-    font-size : 0.5vw;
-  }
   .headPhoneList .productWrap{
     width : 20vw;
+    height: 32vw;
+    justify-content : flex-start;
   }
   .productWrap .productText .productName h2{
     font-size: 2vw;
