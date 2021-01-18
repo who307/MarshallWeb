@@ -63,9 +63,9 @@ export default function Header(props) {
             <div className="categoryWrapH">
               <ul className="categoryMenuH">
                 <li><Link to="/headphones">HEADPHONES</Link></li>
-                <li><Link to="#">SPEAKERS</Link></li>
-                <li><Link to="#">ACCESSORIES</Link></li>
-                <li><Link to="#">BACKSTAGE</Link></li>
+                <li><Link to="/speakers">SPEAKERS</Link></li>
+                <li><Link to="/accessories">ACCESSORIES</Link></li>
+                <li><Link to="/backstage">BACKSTAGE</Link></li>
               </ul>
               <div className="iconDivH">
                 <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faSearch} />
@@ -93,9 +93,9 @@ export default function Header(props) {
             <div className="categoryWrap">
               <ul className="categoryMenu">
                 <li><Link to="/headphones">HEADPHONES</Link></li>
-                <li><Link to="#">SPEAKERS</Link></li>
-                <li><Link to="#">ACCESSORIES</Link></li>
-                <li><Link to="#">BACKSTAGE</Link></li>
+                <li><Link to="/speakers">SPEAKERS</Link></li>
+                <li><Link to="/accessories">ACCESSORIES</Link></li>
+                <li><Link to="/backstage">BACKSTAGE</Link></li>
               </ul>
               <div className="iconDiv">
                 <FontAwesomeIcon style={{ cursor: "pointer" }} icon={faSearch} />
@@ -125,7 +125,7 @@ export default function Header(props) {
             <ul className="categoryMenuH">
               <li><Link onClick={mobileOpen} to="/MarshallWeb">HOME</Link></li>
               <li><Link onClick={mobileOpen} to="/headphones">HEADPHONES</Link></li>
-              <li><Link onClick={mobileOpen} to="#">SPEAKERS</Link></li>
+              <li><Link onClick={mobileOpen} to="/speakers">SPEAKERS</Link></li>
               <li><Link onClick={mobileOpen} to="#">ACCESSORIES</Link></li>
               <li><Link onClick={mobileOpen} to="#">BACKSTAGE</Link></li>
               <li><Link onClick={mobileOpen} to="#">LOGIN</Link></li>

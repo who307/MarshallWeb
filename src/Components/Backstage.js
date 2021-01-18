@@ -1,45 +1,27 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import "../CSS/Headphones.css"
+import "../CSS/Backstage.css"
 import "../CSS/product/product.css"
 
-export default function Headphones(props) {
+export default function Backstage(props) {
 
   let [categoryTitle, setCategoryTitle] = useState([{
-    mainTitle: "LEND US YOUR EARS AND WE’LL PLAY YOU A SONG",
-    mainImg: "https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw1a4324d2/images/categories/headphones/monitor-ii-anc/desktop/HERO-Mon-II-ANC-Desktop-1927x800-2.jpg?sw=2000&sh=2000&sm=fit",
-    categorytitle: "ALL HEADPHONES",
-    subTitle: "From in-ears to over-ears and everything in-between, there’s a Marshall headphone that’s perfect for you."
+    mainTitle: "BUILD YOUR OWN WALL OF SOUND",
+    mainImg: "https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw8b196dac/images/categories/speakers/speakers-main-category/Desktop_Hero_Speakers_1927x800.jpg?sw=2000&sh=2000&sm=fit",
+    categorytitle: "ALL SPEAKERS",
+    subTitle: "Winners aren’t made overnight. Over 50 years of sound and design expertise has been distilled into each and every Marshall speaker, bringing that big stage presence home for your listening enjoyment."
   },
   {
-    mainTitle: "THE BIGGER, THE BADDER",
-    mainImg: "https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwb95c0544/images/front-page/year/2020/february/HERO-Mon-II-ANC-Desktop-1927x800.jpg?sw=1680&sh=2000&sm=fit",
-    categorytitle: "OVER-EAR HEADPHONES",
-    subTitle: "What makes a good headphone great? Hi-Fi sound for starters. Pair that with long-wearing comfort, an ergonomic fit and devilish good looks, and you’ve got yourself a Marshall over-ear headphone. Meet your master."
+    mainTitle: "CLASSIC MARSHALL LOOKS, MODERN BLUETOOTH TECHNOLOGY",
+    mainImg: "https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw70ee33e5/images/categories/speakers/bluetooth-category/Category-speakers-bluetooth-Desktop@1,41x.jpg?sw=2000&sh=2000&sm=fit",
+    categorytitle: "BLUETOOTH SPEAKERS",
+    subTitle: "From small to large, there’s a Marshall wireless speaker perfect for your home. Over 50 years of knowledge has been distilled into every Marshall speaker for an explosive sound that will make any room come alive with music."
   },
   {
-    mainTitle: "SLIP ON SOMETHING MORE COMFORTABLE",
-    mainImg: "https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf55d415f/images/categories/headphones/on-ear-category/category-headphones-on-ear-Desktop@1,41x.jpg?sw=1680&sh=2000&sm=fit",
-    categorytitle: "ON-EAR HEADPHONES",
-    subTitle: "Built for life on the road or life behind a desk, Marshall on-ear headphones provide endless comfort for hours upon hours of listening."
-  },
-  {
-    mainTitle: "SMALL BUT MIGHTY",
-    mainImg: "https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwa49073f5/images/categories/headphones/in-ear-category/new-category-headphones-in-ear-Desktop@1.41x.jpg?sw=1680&sh=2000&sm=fit",
-    categorytitle: "IN-EAR HEADPHONES",
-    subTitle: "Searching for the perfect in-ear headphone? Look no further. Each in-ear from Marshall comes with a microphone and remote, a tangle resistant cord, and interchangeable sleeves or adjustable ear-loops ensuring that the earbuds will fit comfortably in your ears."
-  },
-  {
-    mainTitle: "FREEDOM OF WIRELESS",
-    mainImg: "https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw67ef0771/images/categories/headphones/bluetooth-category/category-headphones-bluetooth-Desktop@1,41x.jpg?sw=2000&sh=2000&sm=fit",
-    categorytitle: "BLUETOOTH WIRELESS HEADPHONES",
-    subTitle: "Bluetooth headphones from Marshall. Now go forth, and hear all the chords without the cords, combined with over 50 years of tried and true Marshall performance.NEW"
-  },
-  {
-    mainTitle: "TURN IT UP AND TUNE OUT",
-    mainImg: "https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwe8ed4363/images/categories/headphones/anc-category/new-category-headphones-noise-cancelling-Desktop@1.41x.jpg?sw=1680&sh=2000&sm=fit",
-    categorytitle: "ACTIVE NOISE CANCELLING HEADPHONES",
-    subTitle: "Our active noise cancelling headphones utilise four microphones to continuously measure and pinpoint ambient noise to block out the things you don’t want to hear. Now you can focus on what matters most – the music."
+    mainTitle: "MARSHALL PORTABLE SPEAKERS",
+    mainImg: "https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw2d2b5cf3/images/categories/speakers/portable-category/hit-the-road-hero-desktop@1,41x.jpg?sw=2000&sh=2000&sm=fit",
+    categorytitle: "PORTABLE SPEAKERS",
+    subTitle: "Are you ready to hit the road but in need of wireless solution for your music? Don’t let cords get in the way of your journey. Grab a portable, battery-powered Bluetooth speaker from Marshall; crank up the volume and live life to the beat of your own soundtrack."
   },
   ])
   let [product, setProduct] = useState([{
@@ -120,23 +102,19 @@ export default function Headphones(props) {
     categoryEvent(Number(e.target.id))
   }
   let [categoryName, setCategoryName] = useState()
+
   const categoryEvent = (name) => {
     switch (name) {
-      case 1: setCategoryName("overEar");
+      case 1: setCategoryName("BlueTooth");
         break;
-      case 2: setCategoryName("onEar");
+      case 2: setCategoryName("PorTable");
         break;
-      case 3: setCategoryName("inEar");
-        break;
-      case 4: setCategoryName("blueTooth");
-        break;
-      case 5: setCategoryName("noiseCancel");
-        break;
-      default: setCategoryName(0);
+      default: setCategoryName("all");
     }
   }
 
-  const headPhoneList = product.map((product) => {
+  const speakersList = product.map((product) => {
+
     if (categoryNum === 0 ||
       categoryName === product.category ||
       categoryName === product.blueTooth ||
@@ -165,13 +143,10 @@ export default function Headphones(props) {
       )
     }
   })
-  const mainBackGround ={
-    background : "url( " + categoryTitle[categoryNum].mainImg + ")no-repeat center/100%"
-  }
 
   return (
     <div className="headPhoneContainer">
-      <div style={mainBackGround} className="headPhoneMain">
+      <div style={{ background: "url( " + categoryTitle[categoryNum].mainImg + ")no-repeat center/100%" }} className="headPhoneMain">
         <div className="headPhoneWrap">
           <div className="mainText">
             <Link id="text1" to="#">{categoryTitle[categoryNum].mainTitle}</Link>
@@ -185,11 +160,8 @@ export default function Headphones(props) {
         <div className="headPhoneCategory">
           <h3>SHOP BY CATEGORY</h3>
           <div><span onClick={selectCategory} id="0">ALL</span></div>
-          <div><span onClick={selectCategory} id="1">OVER-EAR</span></div>
-          <div><span onClick={selectCategory} id="2">ON-EAR</span></div>
-          <div><span onClick={selectCategory} id="3">IN-EAR</span></div>
-          <div><span onClick={selectCategory} id="4">BLUETOOTH</span></div>
-          <div><span onClick={selectCategory} id="5">NOISE CANCELLING</span></div>
+          <div><span onClick={selectCategory} id="1">BLUETOOTH</span></div>
+          <div><span onClick={selectCategory} id="2">PORTABLE</span></div>
         </div>
         <div className="headPhoneProduct">
           <div className="headPhoneTitle">
@@ -197,7 +169,7 @@ export default function Headphones(props) {
             <span>{categoryTitle[categoryNum].subTitle}</span>
           </div>
           <div className="headPhoneList">
-            {headPhoneList}
+            {speakersList}
           </div>
         </div>
       </div>

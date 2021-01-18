@@ -1,25 +1,26 @@
-.headPhoneContainer {
+.speakersContainer {
   width : 100%;
   height: 100%;
+  
 }
 /* 헤드폰 메인 */
-.headPhoneMain{
+.speakersMain{
   width : 100%;
   height: 40vw;
   cursor: pointer;
   position: relative;
   transition: background 0.5s;
 }
-.headPhoneMain .gradientDiv{
+.speakersMain .gradientDiv{
   width : 100%;
   height: 40vw;
   transition: background 0.6s;
   position: relative;
 }
-.headPhoneMain .gradientDiv:hover{
+.speakersMain .gradientDiv:hover{
   background: rgb(0, 0, 0, 0.15);
 }
-.headPhoneWrap{
+.speakersWrap{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -27,7 +28,7 @@
   position: absolute;
   bottom : 6vw;
 }
-.headPhoneMainWrap .mainText {
+.speakersMainWrap .mainText {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,25 +37,25 @@
   z-index: 3;
 }
 
-.headPhoneWrap .mainText a{
+.speakersWrap .mainText a{
  color : white;
  font-weight: bold;
  padding : 1vw 0 0.5vw 0;
 }
 
-.headPhoneWrap .mainText #text1{
-  width: 45vw;
+.speakersWrap .mainText #text1{
+  width: 55vw;
   font-size : 3.5vw;
   letter-spacing: -0.3vw;
 }
- .headPhoneContants{
+ .speakersContants{
   width : 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background : black;
 }
- .headPhoneCategory{
+ .speakersCategory{
   width :73%;
   height: 6vw;
   display: flex;
@@ -62,25 +63,25 @@
   justify-content: center;
   font-size: 1.5vw;
 }
- .headPhoneCategory h3{
+ .speakersCategory h3{
   color : #777;
   font-weight: bold;
   margin-right : 1vw;
 }
- .headPhoneCategory div{
+ .speakersCategory div{
   border-left : 0.1vw solid white;
   padding : 0.2vw 1vw;
   color : white;
 }
- .headPhoneCategory div span{
+ .speakersCategory div span{
   font-weight: bold;
   cursor: pointer;
   transition: color 0.4s;
 }
- .headPhoneCategory div span:hover{
+ .speakersCategory div span:hover{
   color : #777
 }
- .headPhoneCategory div span::after{
+ .speakersCategory div span::after{
   width : 100%;
   content: "";
   display: flex;
@@ -90,16 +91,15 @@
   opacity: 0;
   transition: opacity 0.4s;
 } 
- .headPhoneCategory div:hover span::after{
+ .speakersCategory div:hover span::after{
   opacity: 1;
 }
- .headPhoneProduct{
+ .speakersProduct{
   width : 100%;
   padding-top : 2vw;
   background: -webkit-radial-gradient(bottom, #bbb, #636363);
 }
- .headPhoneProduct .headPhoneTitle{
-  height: 12vw;
+ .speakersProduct .speakersTitle{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -107,42 +107,103 @@
   padding : 5vw 5vw 2vw 5vw;
   text-align: center;
 }
- .headPhoneProduct .headPhoneTitle h2{
+ .speakersProduct .speakersTitle h2{
   font-size : 2.5vw;
   font-weight: bold;
   margin-bottom: 1vw;
 }
- .headPhoneProduct .headPhoneTitle span{
+ .speakersProduct .speakersTitle span{
   width : 55vw;
   line-height: 1.8vw;
   font-size : 1.5vw;
 }
- .headPhoneProduct .headPhoneList {
+.filterDiv{
+  width: 100%;
+  margin : 3vw 0;
+  font-size :1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.filterCategory{
+  width : 90%;
+  height: 10vw;
+  margin-top : 2vw;
+  border-top : 0.1vw solid #979797;
+}
+.filterBtn {
+  display: flex;
+  align-items: center;
+}
+.filterList{
+  display: flex;
+  align-items: center;
+}
+.filterList .labelBox{
+  width : 1.3vw;
+  height: 1.3vw;
+  border : 0.1vw solid black;
+}
+input[type="checkbox"] + label::before {
+  content: "";
+  background-color: transparent;
+  border: 1px solid #161616;
+  border-radius: 2px;
+  color: #161616;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+input[type="checkbox"] + label::after {
+  content: "";
+  background-color: #161616;
+  border: 1px solid #161616;
+  color: #161616;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  opacity: 0;
+  top: 0.3rem;
+  left: 0.33rem;
+}
+ .speakersProduct .speakersList {
   padding : 3vw 5vw 0 5vw;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 /* 모바일 HeadPhone */
 @media screen and (max-width: 1024px){
-  .headPhoneContainer {
+  .speakersContainer {
     position: relative;
     top : 8vw;
   }
-  .headPhoneWrap .mainText #text1{
+  .speakersWrap .mainText #text1{
     width: 37vw;
     font-size : 4vw;
   }
-  .headPhoneCategory {
+  .speakersCategory {
     width : 100%;
     height: 10vw;
     font-size : 2vw;
   }
-  .headPhoneProduct .headPhoneTitle h2{
+  .speakersProduct .speakersTitle h2{
     font-size : 3vw;
   }
-  .headPhoneProduct .headPhoneTitle span{
+  .speakersProduct .speakersTitle span{
     width : 80vw;
     font-size : 1.8vw;
   }

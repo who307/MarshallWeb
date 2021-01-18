@@ -5,6 +5,9 @@ import Country from './Components/Country';
 import Header from './Components/Header';
 import Home from './Components/Home';
 import Headphones from "./Components/Headphones";
+import Speakers from "./Components/Speakers";
+import Accessories from "./Components/Accessories";
+import Backstage from "./Components/Backstage";
 import Footer from "./Components/Footer";
 import Cookie from "./Components/Cookie"
 import './CSS/App.css';
@@ -52,6 +55,15 @@ function App() {
           />
           <Route path="/headphones" component={Headphones}
             render={() => <Headphones openCountry={openCountry} />}
+          />
+           <Route path="/speakers" component={Speakers}
+            render={() => <Speakers openCountry={openCountry} />}
+          />
+          <Route path="/accessories" component={Accessories}
+            render={() => <Accessories openCountry={openCountry} />}
+          />
+          <Route path="/backstage" component={Backstage}
+            render={() => <Backstage openCountry={openCountry} />}
           />
           <Route component={NoMatch} />
         </Switch>

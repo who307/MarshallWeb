@@ -2,6 +2,9 @@
 ### https://www.marshallheadphones.com/kr/en/
 ### https://who307.github.io/MarshallWeb/
 
+### 2021-01-18
+1. Speakers, accessories 컴포넌트 제작 
+
 ### 2021-01-17
 1. HeadPhones 컴포넌트 제작 useState()와 배열 api map() 사용하여 카테고리 선택시 해당 카테고리에 해당하는 배열 데이터(헤드폰) 나열
 2. HeadPhones 컴포넌트 테블릿 작업

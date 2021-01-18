@@ -1,0 +1,104 @@
+.newProduct{
+  width : 5vw;
+  height : 5vw;
+  background : black;
+  border-radius: 50%;
+  position : absolute;
+  top : 7vw;
+  color :white;
+  font-size : 1vw;
+  text-align: center;
+  line-height: 5vw;
+}
+
+.productWrap{
+  width : 20vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.imgLink {
+  width : 100%;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+.imgDiv {
+  width : 100%;
+  height: 25vw;
+}
+.productText {
+  width: 100%;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.productName {
+  text-align: center;
+}
+.productName h2{
+  font-size : 1.5vw;
+  font-weight: bold;
+  margin-bottom: 0.5vw;
+}
+.productStock {
+  font-weight: bold;
+  font-size : 1vw;
+  margin-bottom: 0.5vw;
+}
+.priceText {
+  width : 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productFrom {
+  font-size : 1vw;
+}
+.priceText i{
+  font-size : 1.2vw;
+  margin : 0 0.3vw 0 0.8vw;
+}
+.priceText span{
+  font-size : 1.2vw;
+  font-weight: bold;
+}
+.colorSelect{
+  text-align: center;
+  margin-top : 1vw;
+}
+.colorSelect span{
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.2vw;
+  background-color: black;
+}
+/* 모바일 HeadPhone */
+@media screen and (max-width: 1024px){
+  .newProduct{
+    line-height: 5.5vw;
+  }
+.productWrap{
+    width : 20vw;
+    height: 33vw;
+  }
+.productName h2{
+    font-size: 2vw;
+  }
+.priceText span{
+    font-size : 2vw;
+  }
+.priceText i{
+    font-size: 2vw;
+  }
+.colorSelect span{
+    width :2vw;
+    height: 2vw;
+  }
+}
