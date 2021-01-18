@@ -177,6 +177,7 @@
 }
 .productWrap .productText .priceText {
   display: flex;
+  margin-bottom: 0.5vw;
 }
 .productWrap .productText .priceText i{
   font-size : 1.2vw;
@@ -230,9 +231,13 @@
     font-size: 2vw;
   }
   .productWrap .productText .priceText span{
-    font-size : 1.6vw;
+    font-size : 2vw;
   }
   .productWrap .productText .priceText i{
-    font-size: 1.6vw;
+    font-size: 2vw;
+  }
+  .productWrap .productText .colorSelect span{
+    width :2vw;
+    height: 2vw;
   }
 }
