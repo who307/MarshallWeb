@@ -96,6 +96,7 @@
 }
  .speakersProduct{
   width : 100%;
+  height: 100%;
   padding-top : 2vw;
   background: -webkit-radial-gradient(bottom, #bbb, #636363);
 }

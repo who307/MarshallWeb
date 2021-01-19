@@ -126,8 +126,8 @@ export default function Header(props) {
               <li><Link onClick={mobileOpen} to="/MarshallWeb">HOME</Link></li>
               <li><Link onClick={mobileOpen} to="/headphones">HEADPHONES</Link></li>
               <li><Link onClick={mobileOpen} to="/speakers">SPEAKERS</Link></li>
-              <li><Link onClick={mobileOpen} to="#">ACCESSORIES</Link></li>
-              <li><Link onClick={mobileOpen} to="#">BACKSTAGE</Link></li>
+              <li><Link onClick={mobileOpen} to="/accessories">ACCESSORIES</Link></li>
+              <li><Link onClick={mobileOpen} to="/backstage">BACKSTAGE</Link></li>
               <li><Link onClick={mobileOpen} to="#">LOGIN</Link></li>
             </ul>
             <div className="languageDivH">
