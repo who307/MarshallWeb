@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -32,7 +32,7 @@ export default function Speakers(props) {
     stock: "",
     name: "ACTON II BLUETOOTH",
     price: "309.00",
-    blueTooth: "blueTooth",
+    blueTooth: "BLUETOOTH",
     new: "",
     color: <div><Link to="#"><span style={{ background: "black" }}></span></Link>
       <Link to="#"><span style={{ background: "white" }}></span></Link></div>
@@ -43,7 +43,7 @@ export default function Speakers(props) {
     stock: "",
     name: "STANMORE II BLUETOOTH",
     price: "429.00",
-    blueTooth: "blueTooth",
+    blueTooth: "BLUETOOTH",
     color: <div><Link to="#"><span style={{ background: "black" }}></span></Link>
       <Link to="#"><span style={{ background: "white" }}></span></Link>
       <Link to="#"><span style={{ background: "#824820" }}></span></Link></div>,
@@ -54,7 +54,7 @@ export default function Speakers(props) {
     stock: "",
     name: "WOBURN II BLUETOOTH",
     price: "619.00",
-    blueTooth: "blueTooth",
+    blueTooth: "BLUETOOTH",
     color: <div><Link to="#"><span style={{ background: "black" }}></span></Link>
       <Link to="#"><span style={{ background: "white" }}></span></Link>
       <Link to="#"><span style={{ background: "#824820" }}></span></Link></div>,
@@ -66,7 +66,7 @@ export default function Speakers(props) {
     name: "EMBERTON",
     price: "179.00",
     portable: "PORTABLE",
-    blueTooth: "blueTooth",
+    blueTooth: "BLUETOOTH",
     color: <div><Link to="#"><span style={{ background: "linear-gradient(90deg, #000000, #000000 50%, #000000 50%" }}></span></Link>
       <Link to="#"><span style={{ background: "linear-gradient(90deg, #000000, #000000 50%, #b9935e 50% )" }}></span></Link></div>,
   },
@@ -78,7 +78,7 @@ export default function Speakers(props) {
     price: "239.00",
     from: "From",
     portable: "PORTABLE",
-    blueTooth: "blueTooth",
+    blueTooth: "BLUETOOTH",
     color: <div><Link to="#"><span style={{ background: "black" }}></span></Link>
       <Link to="#"><span style={{ background: "#3F5364 " }}></span></Link>
       <Link to="#"><span style={{ background: "#50294c  " }}></span></Link>
@@ -92,7 +92,7 @@ export default function Speakers(props) {
     price: "99.00",
     from: "From",
     portable: "PORTABLE",
-    blueTooth: "blueTooth",
+    blueTooth: "BLUETOOTH",
     color: <div><Link to="#"><span style={{ background: "black" }}></span></Link>
       <Link to="#"><span style={{ background: "#50294c  " }}></span></Link></div>,
   },
@@ -103,29 +103,89 @@ export default function Speakers(props) {
     name: "TUFTON",
     price: "499.00",
     portable: "PORTABLE",
-    blueTooth: "blueTooth",
+    blueTooth: "BLUETOOTH",
   },
 
   ]);
-
+  // 카테고리 이벤트
   let [categoryNum, setCategoryNum] = useState(0);
-  const selectCategory = (e) => {
-    setCategoryNum(Number(e.target.id));
-    categoryEvent(Number(e.target.id))
-  }
-  let [categoryName, setCategoryName] = useState()
+  useEffect(() => {
+    let _category = document.querySelectorAll(".speakersCategory div span");
+    for (let ctgr of _category) {
+      ctgr.addEventListener("click", (e) => {
+        setCategoryNum(Number(e.target.id))
+        categoryEvent(Number(e.target.id))
+      })
+    }
+  })
 
+  let [categoryName, setCategoryName] = useState()
   const categoryEvent = (name) => {
     switch (name) {
-      case 1: setCategoryName("blueTooth");
+      case 0: setCategoryName("ALL");
+        break;
+      case 1: setCategoryName("BLUETOOTH");
         break;
       case 2: setCategoryName("PORTABLE");
         break;
       default: setCategoryName(0);
-
     }
   }
+  // 메인이미지 변경
+  const mainBackGround = {
+    background: "url( " + categoryTitle[categoryNum].mainImg + ")no-repeat center/100%"
+  }
+  //ALl 카테고리에서만 필터기능 디스플레이보여줌
+  const _display = {
+    display: categoryNum === 0 ? "" : "none"
+  }
+  // 필터 이벤트
+  let [filterName, setFilterName] = useState()
 
+  useEffect(() => {
+    let _label = document.querySelectorAll(".filterList");
+    for (let i of _label) {
+      i.addEventListener("click", (e) => {
+        setFilterName(e.target.textContent);
+      });
+    }
+  }, [])
+  let [filterData, setFilterData] = useState([])
+
+  useEffect(()=>{
+  
+    const data = {
+      name: filterName,
+    }
+    const result = filterData.some((overlap) => (overlap.name === data.name))
+    if (!result) {
+      setFilterData([...filterData, data])
+    } else if (result) {
+      setFilterData(filterData.filter(overlap => overlap.name !== data.name));
+    }
+},[filterName])
+
+  let [filter, setFilter] = useState({
+    show: "SHOW FILTERS",
+    hide: "HIDE FILTERS",
+    on: false
+  });
+  // 필터 핸들러
+  const filtersHandler = () => {
+    setFilter({
+      ...filter,
+      on: !filter.on
+    })
+  }
+  //필터 화살 방향 전환
+  const _arrow = {
+    transform: filter.on ? "rotate(180deg)" : "",
+    marginLeft: "1vw"
+  }
+  // filter.on 값이 트루일 때 디스플레이보여줌
+  const filterOpen = {
+    display: filter.on ? "inline" : "none"
+  }
   // 스피커 리스트 
   const speakersList = product.map((product) => {
     if (categoryNum === 0 ||
@@ -157,29 +217,6 @@ export default function Speakers(props) {
       )
     }
   })
-  const mainBackGround = {
-    background: "url( " + categoryTitle[categoryNum].mainImg + ")no-repeat center/100%"
-  }
-
-  let [filter, setFilter] = useState({
-    show: "SHOW FILTERS",
-    hide: "HIDE FILTERS",
-    on: false
-  });
-
-  // 필터 핸들러
-  const filtersHandler = () => {
-    setFilter({
-      ...filter,
-      on: !filter.on
-    })
-  }
-  const _arrow = {
-    transform: filter.on ? "rotate(180deg)" : "",
-  }
-  const _display = {
-    display: categoryNum === 0 ? "" : "none"
-  }
 
   return (
     <div className="speakersContainer">
@@ -196,9 +233,9 @@ export default function Speakers(props) {
       <div className="speakersContants">
         <div className="speakersCategory">
           <h3>SHOP BY CATEGORY</h3>
-          <div><span onClick={selectCategory} id="0">ALL</span></div>
-          <div><span onClick={selectCategory} id="1">BLUETOOTH</span></div>
-          <div><span onClick={selectCategory} id="2">PORTABLE</span></div>
+          <div><span id="0">ALL</span></div>
+          <div><span id="1">BLUETOOTH</span></div>
+          <div><span id="2">PORTABLE</span></div>
         </div>
         <div className="speakersProduct">
           <div className="speakersTitle">
@@ -206,19 +243,74 @@ export default function Speakers(props) {
             <span>{categoryTitle[categoryNum].subTitle}</span>
 
             <div className="filterDiv" style={_display}>
-              <div style={{ cursor: "pointer" }} onClick={filtersHandler}>
-                {filter.on ? filter.hide : filter.show}
-                <FontAwesomeIcon icon={faChevronDown} style={_arrow} />
+              <div className="filterText">
+                <div onClick={filtersHandler}>
+                  {filter.on ? filter.hide : filter.show}
+                  <FontAwesomeIcon icon={faChevronDown} style={_arrow} />
+                </div>
               </div>
-              <div className="filterCategory">
+              <div style={filterOpen} className="filterCategory">
                 <div className="filterBtn" >
 
-                  <label>
-                    <div className="filterList">
-                      <label></label>
-                      <input type="checkbox"/>
-                      MULTI-ROOM
-                  </div>
+                  <label className="filterList">
+                    <input id="cb01" type="checkbox"></input>
+                    <label for="cb01"></label>
+                    <div>MULTI-ROOM</div>
+                  </label>
+                  <label id="AMAZON ALEXA" className="filterList">
+                    <input id="cb02" type="checkbox"></input>
+                    <label for="cb02"></label>
+                    <div>AMAZON ALEXA</div>
+                  </label>
+                  <label className="filterList">
+                    <input id="cb03" type="checkbox"></input>
+                    <label for="cb03"></label>
+                    <div>GOOGLE ASSISTANT</div>
+                  </label>
+                  <label className="filterList">
+                    <input id="cb04" type="checkbox"></input>
+                    <label for="cb04"></label>
+                    <div>SPOTIFY CONNECT</div>
+                  </label>
+                  <label className="filterList">
+                    <input id="cb05" type="checkbox"></input>
+                    <label for="cb05"></label>
+                    <div>GOOGLE HOME COMPATIBLE</div>
+                  </label>
+                  <label className="filterList">
+                    <input id="cb06" type="checkbox"></input>
+                    <label for="cb06"></label>
+                    <div>CHROMECAST BUILT-IN</div>
+                  </label>
+                  <label className="filterList">
+                    <input id="cb07" type="checkbox"></input>
+                    <label for="cb07"></label>
+                    <div>WI-FI</div>
+                  </label>
+                  <label className="filterList">
+                    <input id="cb08" type="checkbox"></input>
+                    <label for="cb08"></label>
+                    <div>BLUETOOTH</div>
+                  </label>
+                  <label className="filterList">
+                    <input id="cb09" type="checkbox"></input>
+                    <label for="cb09"></label>
+                    <div>AIRPLAY</div>
+                  </label>
+                  <label className="filterList">
+                    <input id="cb10" type="checkbox"></input>
+                    <label for="cb10"></label>
+                    <div>3.5MM INPUT</div>
+                  </label>
+                  <label className="filterList">
+                    <input id="cb11" type="checkbox"></input>
+                    <label for="cb11"></label>
+                    <div>RCA INPUT</div>
+                  </label>
+                  <label className="filterList">
+                    <input id="cb12" type="checkbox"></input>
+                    <label for="cb12"></label>
+                    <div>PORTABLE (BATTERY)</div>
                   </label>
                 </div>
 

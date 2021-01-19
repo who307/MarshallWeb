@@ -8,7 +8,7 @@
   height: 40vw;
   cursor: pointer;
   position: relative;
-  transition: background 0.5s;
+  transition: background 0.4s;
 }
 .headPhoneMain .gradientDiv{
   width : 100%;

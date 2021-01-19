@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../CSS/Headphones.css"
 import "../CSS/product/product.css"
@@ -92,7 +92,7 @@ export default function Headphones(props) {
     blueTooth: "blueTooth",
     color: <div><Link to="#"><span style={{ background: "black" }}></span></Link>
       <Link to="#"><span style={{ background: "white" }}></span></Link>
-      <Link to="#"><span style={{ background: "#824820"}}></span></Link></div>,
+      <Link to="#"><span style={{ background: "#824820" }}></span></Link></div>,
 
   },
   {
@@ -115,10 +115,18 @@ export default function Headphones(props) {
   ]);
 
   let [categoryNum, setCategoryNum] = useState(0);
-  const selectCategory = (e) => {
-    setCategoryNum(Number(e.target.id));
-    categoryEvent(Number(e.target.id))
-  }
+  // querySelectorAll()로 가져온 노드리스트를 forOf문을 사용하여 인덱스로
+  // 변환해주고 해당 태그전체에 id값을 가져오는 이벤트 추가 
+  // useEffect() deps값을 비워서 마운트 됐을 때만실행
+  useEffect(() => {
+    let _category = document.querySelectorAll(".headPhoneCategory span")
+    for (let ctgr of _category) {
+      ctgr.addEventListener("click", (e) => {
+        setCategoryNum(Number(e.target.id));
+        categoryEvent(Number(e.target.id))
+      })
+    }
+  },[])
   let [categoryName, setCategoryName] = useState()
   const categoryEvent = (name) => {
     switch (name) {
@@ -165,8 +173,8 @@ export default function Headphones(props) {
       )
     }
   })
-  const mainBackGround ={
-    background : "url( " + categoryTitle[categoryNum].mainImg + ")no-repeat center/100%"
+  const mainBackGround = {
+    background: "url( " + categoryTitle[categoryNum].mainImg + ")no-repeat center/100%"
   }
 
   return (
@@ -184,12 +192,12 @@ export default function Headphones(props) {
       <div className="headPhoneContants">
         <div className="headPhoneCategory">
           <h3>SHOP BY CATEGORY</h3>
-          <div><span onClick={selectCategory} id="0">ALL</span></div>
-          <div><span onClick={selectCategory} id="1">OVER-EAR</span></div>
-          <div><span onClick={selectCategory} id="2">ON-EAR</span></div>
-          <div><span onClick={selectCategory} id="3">IN-EAR</span></div>
-          <div><span onClick={selectCategory} id="4">BLUETOOTH</span></div>
-          <div><span onClick={selectCategory} id="5">NOISE CANCELLING</span></div>
+          <div><span id="0">ALL</span></div>
+          <div><span id="1">OVER-EAR</span></div>
+          <div><span id="2">ON-EAR</span></div>
+          <div><span id="3">IN-EAR</span></div>
+          <div><span id="4">BLUETOOTH</span></div>
+          <div><span id="5">NOISE CANCELLING</span></div>
         </div>
         <div className="headPhoneProduct">
           <div className="headPhoneTitle">

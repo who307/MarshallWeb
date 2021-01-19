@@ -9,7 +9,6 @@ export default function Cookie(props) {
 
   // Cookie 컴포넌트 close
   const closeBtn = () => {
-    console.log(props.openCookie)
     props.setOpenCookie(!props.openCookie);
   }
 
