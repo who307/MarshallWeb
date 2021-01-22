@@ -31,7 +31,7 @@
   position: absolute;
   bottom : 6vw;
 }
-.mainText {
+.homeWrap .mainText {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,20 +40,20 @@
   z-index: 3;
 }
 
-.mainText a{
+.homeWrap .mainText a{
  color : white;
  font-weight: bold;
  padding : 1vw 0 0.5vw 0;
 }
-.mainText #text1{
+.homeWrap .mainText #text1{
   font-size : 1.25vw;
 }
-.mainText #text2{
+.homeWrap .mainText #text2{
   width: 40vw;
   font-size : 3.25vw;
   letter-spacing: -0.3vw;
 }
-.mainText #text3{
+.homeWrap .mainText #text3{
   width: 55vw;
   font-size : 1.2vw;
 }

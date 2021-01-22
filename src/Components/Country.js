@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -36,11 +36,11 @@ export default function Coutry(props) {
       ...dropMenu,
       [name]: value
     });
-    if (openCountry && !openLang)
+    if (openCountry && !openLang) {
       countryOpenFunc()
-    else if (!openCountry && openLang)
+    } else if (!openCountry && openLang) {
       languageOpenFunc()
-    else {
+    } else {
       countryOpenFunc()
       languageOpenFunc()
     }
@@ -53,11 +53,11 @@ export default function Coutry(props) {
     props.setCountry(dropMenu)
     props.setOpenCountry(!props.openCountry);
     alert(`국가 : ${dropMenu.country} 언어 : ${dropMenu.language} 입니다.`)
-    if (openCountry && !openLang)
+    if (openCountry && !openLang){
       countryOpenFunc()
-    else if (!openCountry && openLang)
+    }else if (!openCountry && openLang){
       languageOpenFunc()
-    else if (openCountry && openLang) {
+    }else if (openCountry && openLang) {
       countryOpenFunc()
       languageOpenFunc()
     }

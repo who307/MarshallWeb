@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import "../CSS/Accessories.css"
-import "../CSS/product/product.css"
+import "../../CSS/Accessories.css"
+import "../../CSS/product/product.css"
 
 export default function Accessories(props) {
 

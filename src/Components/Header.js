@@ -53,6 +53,16 @@ export default function Header(props) {
     props.setOpenCountry(!props.openCountry)
     document.querySelector("html").scrollTo(0, 0);
   }
+  // 헤더 메뉴클릭시 스크롤 최상단
+  useEffect(()=>{
+    let _link = document.querySelectorAll("a");
+    for(let link of _link){
+      link.addEventListener("click", ()=>{
+        document.querySelector("html").scrollIntoView({behavior : "smooth"});
+      })
+    }
+  },[])
+
   return (
     <div className="header">
       {/* PC 버전  start*/}

@@ -2,6 +2,9 @@
 ### https://www.marshallheadphones.com/kr/en/
 ### https://who307.github.io/MarshallWeb/
 
+### 2021-01-22
+1. Backstage 컴포넌트 제작
+
 ### 2021-01-18
 1. Speakers, accessories 컴포넌트 제작 
 

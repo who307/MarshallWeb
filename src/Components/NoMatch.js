@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import "../CSS/NoMatch.css";
 
-const notFound = {
-
-}
 export default () => (
-  <div className="not-found">
-    <h1>404 NOT FOUND!</h1>
-    <p>찾으시는 페이지가 없습니다! 주소가 맞나 다시 한 번 확인해주세요!</p>
+
+  <div className = "notFound">
+    <div className ="noFoundWrap">
+    <h1 className ="_h1">DAZED AND CONFUSED</h1>
+    <p className = "_p">(404 - PAGE DOESN'T EXIST)</p>
+    <button className ="button"><Link to ="/MarshallWeb"> BACK TO SHOP</Link></button>
+    </div>
   </div>
 );

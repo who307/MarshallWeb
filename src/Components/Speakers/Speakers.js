@@ -2,8 +2,8 @@ import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import "../CSS/Speakers.css"
-import "../CSS/product/product.css"
+import "../../CSS/Speakers.css"
+import "../../CSS/product/product.css"
 
 export default function Speakers(props) {
 
@@ -251,7 +251,6 @@ export default function Speakers(props) {
               </div>
               <div style={filterOpen} className="filterCategory">
                 <div className="filterBtn" >
-
                   <label className="filterList">
                     <input id="cb01" type="checkbox"></input>
                     <label for="cb01"></label>

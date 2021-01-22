@@ -1,9 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import "../CSS/Headphones.css"
-import "../CSS/product/product.css"
+import React, { useEffect, useState } from 'react';
+import { Link, Route, Switch } from "react-router-dom";
+import "../../CSS/Headphones.css"
+import "../../CSS/product/product.css"
+import HeadphoneSelect from "./HeadphoneSelect"
+import NoMatch from "../NoMatch"
 
-export default function Headphones(props) {
+export default function Headphones() {
 
   let [categoryTitle, setCategoryTitle] = useState([{
     mainTitle: "LEND US YOUR EARS AND WE’LL PLAY YOU A SONG",
@@ -51,6 +53,7 @@ export default function Headphones(props) {
     category: "onEar",
     blueTooth: "blueTooth",
     new: <div className="newProduct">NEW</div>,
+    link: "headphones/major-iv"
   },
   {
     id: 2,
@@ -60,6 +63,7 @@ export default function Headphones(props) {
     price: "359.00",
     category: "overEar",
     noiseCancel: "noiseCancel",
+    link: "headphones/monitor-ii"
   },
   {
     id: 3,
@@ -70,6 +74,7 @@ export default function Headphones(props) {
     category: "onEar",
     blueTooth: "blueTooth",
     noiseCancel: "noiseCancel",
+    link: "headphones/mid-anc"
   },
   {
     id: 4,
@@ -81,6 +86,7 @@ export default function Headphones(props) {
     blueTooth: "blueTooth",
     color: <div><Link to="#"><span style={{ background: "linear-gradient(90deg, #000000, #000000 50%, #000000 50%" }}></span></Link>
       <Link to="#"><span style={{ background: "linear-gradient(90deg, #ffffff, #ffffff 50%, #ffffff 50%" }}></span></Link></div>,
+    link: "headphones/major-iii",
   },
   {
     id: 5,
@@ -93,7 +99,7 @@ export default function Headphones(props) {
     color: <div><Link to="#"><span style={{ background: "black" }}></span></Link>
       <Link to="#"><span style={{ background: "white" }}></span></Link>
       <Link to="#"><span style={{ background: "#824820" }}></span></Link></div>,
-
+    link: "headphones/mainor-ii"
   },
   {
     id: 6,
@@ -101,7 +107,8 @@ export default function Headphones(props) {
     stock: "",
     name: "MODE EQ",
     price: "99.00",
-    category: "inEar"
+    category: "inEar",
+    link: "headphones/mode-eq"
   },
   {
     id: 7,
@@ -109,7 +116,8 @@ export default function Headphones(props) {
     stock: "",
     name: "MODE",
     price: "75.00",
-    category: "inEar"
+    category: "inEar",
+    link: "headphones/mode"
   },
 
   ]);
@@ -126,7 +134,7 @@ export default function Headphones(props) {
         categoryEvent(Number(e.target.id))
       })
     }
-  },[])
+  }, [])
   let [categoryName, setCategoryName] = useState()
   const categoryEvent = (name) => {
     switch (name) {
@@ -150,13 +158,13 @@ export default function Headphones(props) {
       categoryName === product.blueTooth ||
       categoryName === product.noiseCancel) {
       return (
-        <div key={product.id} className="productWrap">
-          <Link className="imgLink" to="#">
+        <Link to={product.link} key={product.id} className="productWrap">
+          <div className="imgLink">
             {product.new}
             <div style={{ background: "url( " + product.productImg + ")no-repeat center/100%" }} className="imgDiv">
             </div>
-          </Link>
-          <Link to="#" className="productText">
+          </div>
+          <div className="productText">
             <div className="productName">
               <h2>{product.name}</h2>
             </div>
@@ -168,8 +176,8 @@ export default function Headphones(props) {
             <div className="colorSelect">
               {product.color}
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
       )
     }
   })
