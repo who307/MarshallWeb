@@ -1,6 +1,6 @@
 ## Marshall 웹사이트 메인페이지 react
 ### https://www.marshallheadphones.com/kr/en/
-### https://who307.github.io/MarshallWeb/
+### https://who307.github.io/MarshallWeb/index.html
 
 ### 2021-01-22
 1. Backstage 컴포넌트 제작
