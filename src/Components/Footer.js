@@ -82,7 +82,7 @@ export default function Footer(props) {
               <h2>©2020 ZOUND INDUSTRIES. ALL RIGHTS RESERVED. ORG. NR 5567574610</h2>
             </div>
             <div className="footerLogo">
-              <Link to="/">
+              <Link to="/marshallWeb">
                 <img src="https://www.marshallheadphones.com/on/demandware.static/Sites-Marshall-SK-Site/-/default/dw5b5a3521/images/marshall-logo-white.svg"></img>
               </Link>
             </div>

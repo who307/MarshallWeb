@@ -21,7 +21,7 @@ function App() {
   })
 
   // Country 컴포넌트 온오프
-  let [openCountry, setOpenCountry] = useState(false);
+  let [openCountry, setOpenCountry] = useState(true);
 
   // Cookie 컴포넌트 온오프
   let [openCookie, setOpenCookie] = useState(true);
