@@ -157,7 +157,7 @@ export default function Speakers(props) {
     const data = {
       name: filterName,
     }
-    const result = filterData.some((overlap) => (overlap.name === data.name))
+    const result = filterData.some(overlap => (overlap.name === data.name))
     if (!result) {
       setFilterData([...filterData, data])
     } else if (result) {
