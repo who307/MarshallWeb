@@ -50,7 +50,7 @@ export default function Backstage(props) {
         categoryEvent(Number(e.target.id))
       })
     }
-  },[])
+  }, [])
 
   let [categoryName, setCategoryName] = useState()
   const categoryEvent = (name) => {
@@ -68,15 +68,14 @@ export default function Backstage(props) {
       default: setCategoryName(0);
     }
   }
-  console.log(categoryName)
   // 메인이미지 변경
   const mainBackGround = {
     background: "url( " + categoryTitle[categoryNum].mainImg + ")no-repeat center/100%",
-    height : categoryName === undefined || categoryName === "GUIDED BY MUSIC" ? "34vw" : categoryName === "ALL" || categoryName === "HOMEWARD BOUND"  ? "46vw" : "40vw"
+    height: categoryName === undefined || categoryName === "GUIDED BY MUSIC" ? "34vw" : categoryName === "ALL" || categoryName === "HOMEWARD BOUND" ? "46vw" : "40vw"
   }
   // 카테고리에 따라 height값 변경
   const _height = {
-    height : categoryName === undefined || categoryName === "GUIDED BY MUSIC" ? "34vw" : categoryName === "ALL" || categoryName === "HOMEWARD BOUND"  ? "46vw" : "40vw"
+    height: categoryName === undefined || categoryName === "GUIDED BY MUSIC" ? "34vw" : categoryName === "ALL" || categoryName === "HOMEWARD BOUND" ? "46vw" : "40vw"
   }
 
   return (
@@ -88,7 +87,7 @@ export default function Backstage(props) {
             <Link id="text2" to="#">{categoryTitle[categoryNum].subTitle}</Link>
           </div>
         </div>
-        <div className="gradientDiv" style ={_height}>
+        <div className="gradientDiv" style={_height}>
         </div>
       </div>
 
