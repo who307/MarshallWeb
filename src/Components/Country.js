@@ -37,7 +37,6 @@ export default function Coutry(props) {
     let buttonCountry = document.querySelectorAll(".countryDropDown button, .languageDropDown button")
     // querySelectorAll 로 가져온 nodeList를 forEach문으로 해당 elements를 반환하고 onclick 이벤트 추가
     buttonCountry.forEach((countryBtn) => {
-      console.log(countryBtn.parentElement.className )
       countryBtn.onclick = (e) => {
         const { name, value } = e.target;
         setDropMenu({
