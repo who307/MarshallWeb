@@ -26,9 +26,6 @@ a{
   background : white;
 }
 @media screen and (max-width: 1024px){
-  html{
-    background : white;
-  }
   .button {
     padding : 1.5vw 3vw;
     border :none;
