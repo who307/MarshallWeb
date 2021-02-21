@@ -87,7 +87,7 @@ export default function Coutry(props) {
 
   return (
 
-    <div className="countryDiv" style={props.openCountry ? {} : { height: "0" }}>
+    <div className="countryDiv" style={props.openCountry ? {} : { height: "0" , visibility : "hidden"}}>
       <FontAwesomeIcon className="_closeBtn" onClick={closeBtn} icon={faTimes} />
 
       <div className="countryWrap">
