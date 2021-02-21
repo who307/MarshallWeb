@@ -58,6 +58,7 @@
   align-items: center;
 }
 .categoryWrapH li a{
+  font-size: 1.1vw;
   font-weight: bold;
   color : white;
   margin: 0 1.2vw;

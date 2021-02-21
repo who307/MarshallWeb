@@ -101,7 +101,7 @@
   background: white;
 }
  .backStageProduct .backStageTitle{
-  height: 12vw;
+  height: 5vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -110,7 +110,7 @@
   text-align: center;
 }
  .backStageProduct .backStageTitle h2{
-  font-size : 2.5vw;
+  font-size : 3vw;
   font-weight: bold;
   margin-bottom: 1vw;
 }
@@ -119,11 +119,107 @@
   line-height: 1.8vw;
   font-size : 1.5vw;
 }
+/* news 리스트 */
  .backStageProduct .backStageList {
-  padding : 0 5vw;
+  display: flex;
+  flex-direction: column;
+}
+.backStageList button{
+  width : 10vw;
+  height : 3vw;
+  background : black;
+  color : white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border : none;
+  font-weight: bold;
+  font-size : 1vw;
+  cursor: pointer;
+}
+.backStageList .newsList {
+  padding : 0 5vw 5vw 5vw;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+.newsWrap{
+  width :38vw;
+  height: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.newsWrap h1{
+  font-size : 2vw;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.newsWrap .imgDiv{
+  width : 100%;
+  height : 80%;
+  transition : filter 0.8s;
+}
+.newsWrap .imgDiv:hover{
+  filter: brightness(80%);
+}
+.backStageList .subNewsList{
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.backStageList .subNewsList hr{
+  width : 85%;
+  height: 0.01vw;
+  border : 0;
+  background : rgb(212, 211, 211);
+  margin : 4vw 0 7vw 0;
+}
+.backStageList .subNewsList h1{
+  font-size: 3vw;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-bottom : 5vw;
+}
+.subNewsWrap{
+  width : 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.subNewsWrap .subNewsDiv{
+  width :18vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  margin : 3vw 2vw 3vw 2vw ;
+}
+.subNewsDiv .imgDiv{
+  width : 100%;
+  height : 45%;
+}
+.subNewsDiv span{
+  font-size : 1vw;
+  padding-top : 2vw;
+  color : lightgrey;
+}
+.subNewsDiv h2{
+  font-size : 1.7vw;
+  color : black;
+  font-weight: bold;
+  padding-top : 1.8vw;
+}
+.subNewsDiv h3{
+  font-size : 1vw;
+  color : black;
+  line-height: 1.2vw;
+  text-transform: none;
+  padding : 2vw 0;
 }
 
 /* 모바일 HeadPhone */
