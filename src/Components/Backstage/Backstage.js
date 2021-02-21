@@ -36,13 +36,13 @@ export default function Backstage(props) {
       id: 1,
       img: "https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwbabd367c/images/backstage/mh-allahlas-overview.jpg?sw=1234&sh=2000&sm=fit",
       title: "on the road width allah-las",
-      link: ""
+      link: "#"
     },
     {
       id: 2,
       img: "https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwfdba6f2a/images/backstage/mh-boojohnson-overview.jpg?sw=1234&sh=2000&sm=fit",
       title: "BOO JOHNSON IN LOS ANGELES",
-      link: ""
+      link: "#"
     },
 
   ]);
@@ -53,7 +53,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2020-02-26",
       title: "HOMEWARD BOUND WITH ZUMI ROSOW",
       subTitle: "Zumi has recorded with Diva, Ex-Cult, Deerhunter and others, and toured internationally as a member of the Black Lips who have recorded their latest album “Sing in a world that’s falling apart.”",
-      link: ""
+      link: "#"
     },
     {
       id: 2,
@@ -61,7 +61,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-12-06",
       title: "ON THE ROAD WITH ALLAH-LAS",
       subTitle: "Four albums and a decade together, the Allah-Las have branched out from the sunny Southern California sound that defined their first few records.",
-      link: ""
+      link: "#"
     },
     {
       id: 3,
@@ -69,7 +69,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-11-21",
       title: "CHARLIE BARKER IN LONDON",
       subTitle: "Meet Charlie Barker – London local and girl about town. Her sartorial sense of style and artistic flair embodies the spirit of rock ‘n’ roll. Follow her as she takes us to her favourite Hackney spots.",
-      link: ""
+      link: "#"
     },
     {
       id: 4,
@@ -77,7 +77,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-11-21",
       title: "FREJA WEWER IN COPENHAGEN",
       subTitle: "Scandinavian it-girl Freja Wewer loves her hometown, Copenhagen. Let her show you around the neighbourhood of Nørrebro, bringing you to her favourite spots, such as the bar Café Viking and the record shop Insula Music.",
-      link: ""
+      link: "#"
     },
     {
       id: 5,
@@ -85,7 +85,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-11-21",
       title: "HACHI 王悦伊 IN BEIJING",
       subTitle: "Beijing is a thriving metropolis that may seem overwhelming to some, but not to Hachi王悦伊, who calls it her home. Get to know Hachi王悦伊, and her hometown, as she takes us on a journey through the streets of Gulou.",
-      link: ""
+      link: "#"
     },
     {
       id: 6,
@@ -93,7 +93,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-11-21",
       title: "VANELLIMELLI IN BERLIN",
       subTitle: "Berlin-based VANELLIMELLI channels her cool-girl aesthetics into a variety of artistic mediums. Join her as she takes us on a journey through Kreuzberg, a neighbourhood that is filled with live venues, record stores and bars.",
-      link: ""
+      link: "#"
     },
     {
       id: 7,
@@ -101,7 +101,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-11-21",
       title: "BOO JOHNSON IN LOS ANGELES",
       subTitle: "California native Boo Johnson is a professional skateboarder who began touring the world at 16 years old. He now calls Los Angeles his home. Follow him on a journey to his favourite Echo Park hangouts.",
-      link: ""
+      link: "#"
     },
     {
       id: 8,
@@ -109,7 +109,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-11-21",
       title: "LOUISE FOLLAIN IN PARIS",
       subTitle: "There is something very, “je ne sais quoi” about the Paris native Louise Follain – reminding us of a modern Jane Birkin. Hitch a ride with her as she is spending her time around the 11th Arrondissment.",
-      link: ""
+      link: "#"
     },
     {
       id: 9,
@@ -117,7 +117,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "EAST SIDE GALLERY",
       subTitle: "Facing the former Eastern Side, international artists were invited to paint murals along a mile-stretch of the Wall as a symbol of freedom, identity and unity.",
-      link: ""
+      link: "#"
     },
     {
       id: 10,
@@ -125,7 +125,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "MAYHEM",
       subTitle: "Nestled on the border between Nørrebro and Østerbro lies a neighbourhood known on the one hand for its peace and quiet – plus young, wealthy parents – and on the other for the well-named venue Mayhem.",
-      link: ""
+      link: "#"
     },
     {
       id: 11,
@@ -133,7 +133,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "EARTH",
       subTitle: "The inside of the newest venue in Hackney is a stunning contrast of a beautiful old interior and the latest in live music technology. EartH is the former Savoy Cinema, which opened in 1936 but sat derelict for four decades above a Turkish snooker hall.",
-      link: ""
+      link: "#"
     },
     {
       id: 12,
@@ -141,7 +141,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "SCHOOL LIVE BAR",
       subTitle: "School is established as the most vital rock-music venue in Beijing. The authorities’ city-wide “clean-up” operation has seen many nearby venues close, but it still stands proud, with new bands unfolding masterplans on its battered sofas while others let rip on the tiny stage.",
-      link: ""
+      link: "#"
     },
     {
       id: 13,
@@ -149,7 +149,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "MADAME CLAUDE",
       subTitle: "The dimly lit, intimate interior is left over from the space’s former life as a brothel (that’s discounting a brief period as a notorious karaoke bar), from which it took its name.",
-      link: ""
+      link: "#"
     },
     {
       id: 14,
@@ -157,7 +157,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "LIDO",
       subTitle: "Lido has hosted all types of touring and local bands, and has had to work hard to earn its reputation as a leading concert hall by throwing intense and dazzling parties, shows and poetry slams.",
-      link: ""
+      link: "#"
     },
     {
       id: 15,
@@ -165,7 +165,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "AUTO SPACE",
       subTitle: "There are no neon signs announcing Auto Space’s existence to the outside world, just an inconspicuous doorway that those not in the know would be likely to brush past without glancing twice.",
-      link: ""
+      link: "#"
     },
     {
       id: 16,
@@ -173,7 +173,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-11-21",
       title: "FROGTOWN BREWERY",
       subTitle: "LA’s citywide craft-beer phenomenon has found a cosy home at Frogtown Brewery, a craft-beer emporium owned by old friends and long-standing beer enthusiasts Adam Kestel and Mike Voss.",
-      link: ""
+      link: "#"
     },
     {
       id: 17,
@@ -181,7 +181,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "SALVARE GOODS",
       subTitle: "The community of artists and makers, that have long resided in the area, of course took to Salvare’s expertly selected offerings – vintage rugs, pottery, furnishings and other one-of-a-kind pieces sourced from estate sales.",
-      link: ""
+      link: "#"
     },
     {
       id: 18,
@@ -189,7 +189,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "RED HOUSE",
       subTitle: "An evening at Red House evokes feelings of the eponymous track by Jimi Hendrix: haunting, electric and with dazzling blues. Here, the bartenders stir your emotions with seasonally changing cocktails and a house Negroni (a crowd favourite at just 5 Euros) plus an impeccable selection of craft beers.",
-      link: ""
+      link: "#"
     },
     {
       id: 19,
@@ -197,7 +197,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "HOPFENREICH",
       subTitle: "Bucking the trends of other bars in the neighbourhood with its wide selection, Hopfenreich helps bring a more worldly and cosmopolitan feel to the local bar scene.",
-      link: ""
+      link: "#"
     },
     {
       id: 20,
@@ -205,7 +205,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2018-10-25",
       title: "FREJA WEWER IN COPENHAGEN",
       subTitle: "Scandinavian it-girl Freja Wewer loves her hometown, Copenhagen. Let her show you around the neighbourhood of Nørrebro, bringing you to her favourite spots, such as the bar Café Viking and the record shop Insula Music.",
-      link: ""
+      link: "#"
     },
     {
       id: 21,
@@ -213,7 +213,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "DUSK DAWN CLUB",
       subTitle: "Dusk Dawn Club, known simply as DDC to its regulars, is the most musically eclectic live house in Beijing. Cui Jian, probably China’s most high-profile rock star, has been known to turn up to perform at the venue’s free-for-all collaboration nights, and headliners are just as likely to be heavy rockers as they are acoustic guitar strummers, rappers or jazz heads.",
-      link: ""
+      link: "#"
     },
     {
       id: 22,
@@ -221,7 +221,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "WOWSVILLE RECORDS",
       subTitle: "With an American take on classic-era rock ’n’ roll, Wowsville pays homage to the international punk movement that helped define Kreuzberg in the late 70s.",
-      link: ""
+      link: "#"
     },
     {
       id: 23,
@@ -229,7 +229,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "HIMMERIGET",
       subTitle: "The crowd at Himmeriget is low-key, making this the perfect spot for a one-to-one catch-up, or for some artful and boozy concoctions to get the night started. If you get hungry you don’t have to leave the bar: just ask the bartender to order you an aubergine and burrata pizza from next door.",
-      link: ""
+      link: "#"
     },
     {
       id: 24,
@@ -237,7 +237,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "TIGER",
       subTitle: "Tiger, set to mark its tenth anniversary next year, sources clothes from Japan, the US and Europe, as well as China, and the result is a mix as eclectic as the genre-mash culture the surrounding Gulou area demands.",
-      link: ""
+      link: "#"
     },
     {
       id: 25,
@@ -245,7 +245,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "PERMANENT RECORDS",
       subTitle: "Permanent Records – which has two additional locations in LA’s Highland Park neighbourhood – also boasts an eponymous label, now with 60 releases to its name.",
-      link: ""
+      link: "#"
     },
     {
       id: 26,
@@ -253,7 +253,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "GILLETT SQUARE",
       subTitle: "Gillett Square must be one of the most musically diverse open space in London - there are Rastafarian Nyabinghi drumming workshops, community music festivals and open mic events.",
-      link: ""
+      link: "#"
     },
     {
       id: 27,
@@ -261,7 +261,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "SHACKLEWELL ARMS",
       subTitle: "Shacklewell Arms is an odd sort of place to watch bands. Drummers are often hidden away in one of the arches at the back of the room, and the sound crew seem to operate from a sort of cage, but that seems to add to the often intense atmosphere.",
-      link: ""
+      link: "#"
     },
     {
       id: 28,
@@ -269,7 +269,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "INSULA MUSIC",
       subTitle: "If you're looking to pick up some records from the realms of crunchy shoegaze, woozy psych or adrenaline-inducing local metal, this little record shop is the place to go. In fact, if you’re lucky, you might also be able to get your hands on some free jazz records.",
-      link: ""
+      link: "#"
     },
     {
       id: 29,
@@ -277,7 +277,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "REPEATER",
       subTitle: "Named after the classic Fugazi album, Repeater is one of the very best vintage and second-hand clothes emporiums in Berlin. Packed from one side to the other with recycled clothes, the store is decorated with pictures of John F Kennedy and old German advertising.",
-      link: ""
+      link: "#"
     },
     {
       id: 30,
@@ -285,7 +285,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "RAMEN TO BÍIRU",
       subTitle: "Do you like noodles with rich, fatty pork belly? How about unconventional beer from Copenhagen’s finest craft brewery? If the union between those two things makes you nod your head in hungry approval, then look no further than Ramen to Bíiru.",
-      link: ""
+      link: "#"
     },
     {
       id: 31,
@@ -293,7 +293,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "THE LAST TUESDAY SOCIETY",
       subTitle: "Despite the modern towers that now loom over the western fringes of Hackney, there’s still one place that feels almost like a time machine back to some decadent past. The Last Tuesday Society sits just to the north of the Regents Canal in an otherwise nondescript row of businesses.",
-      link: ""
+      link: "#"
     },
     {
       id: 32,
@@ -301,7 +301,7 @@ export default function Backstage(props) {
       date: "PUBLISH DATE: 2019-05-07",
       title: "THE VICTORIA DALSTON",
       subTitle: "Many moons ago, in the distant time before Shoreditch became one of London’s essential nightlife destinations, one of the few places you could get a drink among the knackered warehouses and dingy shops was Jaguar Shoes.",
-      link: ""
+      link: "#"
     },
 
   ]);
