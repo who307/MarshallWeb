@@ -124,6 +124,9 @@
     font-size : 2vw;
     line-height: 3vw;
   }
+  .countryDiv .countryWrap a span:hover {
+    border-bottom: 1px solid #8f8e8e;
+  }
   .countryDiv ._closeBtn {
     font-size: 4vw;
   }

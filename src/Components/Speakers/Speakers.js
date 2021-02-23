@@ -184,7 +184,7 @@ export default function Speakers(props) {
   }
   // filter.on 값이 트루일 때 디스플레이보여줌
   const filterOpen = {
-    display: filter.on ? "inline" : "none"
+    display: filter.on ? "block" : "none"
   }
   // 스피커 리스트 
   const speakersList = product.map((product) => {
