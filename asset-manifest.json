@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/MarshallWeb/static/css/main.4ec50e53.css",
-    "main.js": "/MarshallWeb/static/js/main.19e3ebb8.js",
+    "main.js": "/MarshallWeb/static/js/main.83907535.js",
     "static/js/422.a555f6bb.chunk.js": "/MarshallWeb/static/js/422.a555f6bb.chunk.js",
     "static/media/Anton-Regular.ttf": "/MarshallWeb/static/media/Anton-Regular.02396b4d2cf38d4a7781.ttf",
     "static/media/HelveticaNeueLTPro-BdCn.otf": "/MarshallWeb/static/media/HelveticaNeueLTPro-BdCn.fdd3df1d3b74b58c3835.otf",
     "index.html": "/MarshallWeb/index.html",
     "main.4ec50e53.css.map": "/MarshallWeb/static/css/main.4ec50e53.css.map",
-    "main.19e3ebb8.js.map": "/MarshallWeb/static/js/main.19e3ebb8.js.map",
+    "main.83907535.js.map": "/MarshallWeb/static/js/main.83907535.js.map",
     "422.a555f6bb.chunk.js.map": "/MarshallWeb/static/js/422.a555f6bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4ec50e53.css",
-    "static/js/main.19e3ebb8.js"
+    "static/js/main.83907535.js"
   ]
 }
