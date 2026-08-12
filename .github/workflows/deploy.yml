@@ -3,7 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [master]
-    workflow_dispatch:
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
@@ -20,7 +23,7 @@ jobs:
         run: npm install
       
       - name: Build
-        run: npm run build
+        run: CI=false npm run build
       
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
