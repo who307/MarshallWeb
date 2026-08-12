@@ -94,7 +94,7 @@ export default function Accessories(props) {
       )
   })
   const mainBackGround ={
-    background : "url( " + categoryTitle.mainImg + ")no-repeat center/100%"
+    background : `url(${categoryTitle.mainImg}) no-repeat center/100%`
   }
   return (
     <div className="accessoriesContainer">
