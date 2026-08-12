@@ -1,0 +1,215 @@
+.speakersContainer {
+  width : 100%;
+  height: 100%;
+  
+}
+/* 헤드폰 메인 */
+.speakersMain{
+  width : 100%;
+  height: 40vw;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.4s;
+}
+.speakersMain .gradientDiv{
+  width : 100%;
+  height: 40vw;
+  transition: background 0.6s;
+  position: relative;
+}
+.speakersMain .gradientDiv:hover{
+  background: rgb(0, 0, 0, 0.15);
+}
+.speakersWrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom : 6vw;
+}
+.speakersWrap .mainText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow :column wrap;
+  text-align: center;
+  z-index: 3;
+}
+.speakersWrap .mainText a{
+ color : white;
+ font-weight: bold;
+ padding : 1vw 0 0.5vw 0;
+}
+.speakersWrap .mainText #text1{
+  width: 50vw;
+  font-size : 3.25vw;
+  letter-spacing: -0.3vw;
+}
+ .speakersContants{
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background : black;
+}
+ .speakersCategory{
+  width :73%;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+}
+ .speakersCategory h3{
+  color : #777;
+  font-weight: bold;
+  margin-right : 1vw;
+}
+ .speakersCategory div{
+  border-left : 0.1vw solid white;
+  padding : 0.2vw 1vw;
+  color : white;
+}
+ .speakersCategory div span{
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+ .speakersCategory div span:hover{
+  color : #777
+}
+ .speakersCategory div span::after{
+  width : 100%;
+  content: "";
+  display: flex;
+  border-bottom: 0.2vw solid #777;
+  position: relative;
+  top : 0.2vw;
+  opacity: 0;
+  transition: opacity 0.4s;
+} 
+ .speakersCategory div:hover span::after{
+  opacity: 1;
+}
+ .speakersProduct{
+  width : 100%;
+  height: 100%;
+  padding-top : 2vw;
+  background: -webkit-radial-gradient(bottom, #bbb, #636363);
+}
+ .speakersProduct .speakersTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding : 5vw 5vw 0vw 5vw;
+  text-align: center;
+}
+ .speakersProduct .speakersTitle h2{
+  font-size : 2.5vw;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+ .speakersProduct .speakersTitle span{
+  width : 55vw;
+  line-height: 1.8vw;
+  font-size : 1.5vw;
+}
+.filterDiv{
+  width: 100%;
+  margin : 3vw 0;
+  font-size :1vw;
+  display: flex;
+  flex-direction: column;
+}
+.filterText {
+  display: flex;
+  justify-content: center;
+}
+.filterText div{
+  font-size: 1.2vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.filterCategory{
+  width : 95%;
+  height: 10vw;
+  margin-top : 2vw;
+  border-top : 0.1vw solid #979797;
+}
+.filterBtn {
+  width : 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.filterList{
+  margin : 1vw;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size : 1vw;
+  font-weight: bold;
+}
+.filterList div {
+  margin-left : 0.8vw;
+}
+.filterList input {
+  display: none;
+}
+.filterList input[type="checkbox"] + label {
+  border: 0.1vw solid #161616;
+  border-radius: 2px;
+  color: #161616;
+  display: inline-block;
+  width: 1vw;
+  height: 1vw;
+  padding : 0.7vw;
+  line-height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label {
+  background: #161616;
+  border: 0.1vw solid #161616;
+  color: #161616;
+  padding : 0.7vw;
+  text-align: center;
+  vertical-align: middle;
+}
+ .speakersProduct .speakersList {
+  padding : 3vw 5vw 0 5vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/* 모바일 HeadPhone */
+@media screen and (max-width: 1024px){
+  .speakersContainer {
+    position: relative;
+    top : 8vw;
+  }
+  .speakersWrap .mainText #text1{
+    width: 37vw;
+    font-size : 4vw;
+  }
+  .speakersCategory {
+    width : 100%;
+    height: 10vw;
+    font-size : 2vw;
+  }
+  .speakersProduct .speakersTitle h2{
+    font-size : 3vw;
+  }
+  .speakersProduct .speakersTitle span{
+    width : 80vw;
+    font-size : 1.8vw;
+  }
+}

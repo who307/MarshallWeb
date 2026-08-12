@@ -1,0 +1,290 @@
+.backStageContainer {
+  width : 100%;
+  height: 100%;
+}
+/* backstage 메인 */
+.backStageMain{
+  width : 100%;
+  height: 34vw;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.4s;
+}
+.backStageMain .gradientDiv{
+  width : 100%;
+  height: 34vw;
+  transition: background 0.6s;
+  position: relative;
+}
+.backStageMain .gradientDiv:hover{
+  background: rgb(0, 0, 0, 0.15);
+}
+.backStageWrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom : 8vw;
+}
+.backStageWrap .mainText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow :column wrap;
+  text-align: center;
+  z-index: 3;
+}
+.backStageWrap .mainText a{
+ color : white;
+ font-weight: bold;
+ padding : 1vw 0 0.5vw 0;
+}
+.backStageWrap .mainText #text1{
+  width: 45vw;
+  font-size : 3.5vw;
+  letter-spacing: -0.3vw;
+}
+.backStageWrap .mainText #text2{
+  width: 45vw;
+  font-size : 1.2vw;
+}
+ .backStageContants{
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background : black;
+}
+ .backStageCategory{
+  width :100%;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+}
+ .backStageCategory h3{
+  color : #777;
+  font-weight: bold;
+  margin-right : 1vw;
+}
+ .backStageCategory div{
+  border-left : 0.1vw solid white;
+  padding : 0.2vw 1vw;
+  color : white;
+}
+ .backStageCategory div span{
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+ .backStageCategory div span:hover{
+  color : #777
+}
+ .backStageCategory div span::after{
+  width : 100%;
+  content: "";
+  display: flex;
+  border-bottom: 0.2vw solid #777;
+  position: relative;
+  top : 0.2vw;
+  opacity: 0;
+  transition: opacity 0.4s;
+} 
+ .backStageCategory div:hover span::after{
+  opacity: 1;
+}
+ .backStageProduct{
+  width : 100%;
+  padding-bottom : 4vw;
+  background: white;
+}
+ .backStageProduct .backStageTitle{
+  height: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding : 5vw 5vw 2vw 5vw;
+  text-align: center;
+}
+ .backStageProduct .backStageTitle h2{
+  font-size : 3vw;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+ .backStageProduct .backStageTitle span{
+  width : 55vw;
+  line-height: 1.8vw;
+  font-size : 1.5vw;
+}
+/* news 리스트 */
+ .backStageProduct .backStageList {
+  display: flex;
+  flex-direction: column;
+}
+.backStageList button{
+  width : 10vw;
+  height : 3vw;
+  background : black;
+  color : white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border : none;
+  font-weight: bold;
+  font-size : 1vw;
+  cursor: pointer;
+}
+.backStageList .newsList {
+  padding : 0 5vw 5vw 5vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.newsWrap{
+  width :38vw;
+  height: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.newsWrap h1{
+  font-size : 2vw;
+  font-weight: bold;
+  letter-spacing: -0.1vw;
+}
+.newsWrap .imgDiv{
+  width : 100%;
+  height : 80%;
+  transition : filter 0.8s;
+}
+.newsWrap .imgDiv:hover{
+  filter: brightness(80%);
+}
+.backStageList .subNewsList{
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.backStageList .subNewsList hr{
+  width : 85%;
+  height: 0.05vw;
+  border : 0;
+  background : rgb(228, 227, 227);
+  margin : 4vw 0 7vw 0;
+}
+.backStageList .subNewsList h1{
+  font-size: 3vw;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-bottom : 5vw;
+}
+.subNewsWrap{
+  width : 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+  flex-wrap: wrap;
+}
+.subNewsWrap .subNewsDiv{
+  width :18vw;
+  height: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  margin : 3vw 2vw 3vw 2vw ;
+}
+.subNewsDiv .imgDiv{
+  width : 100%;
+  height : 42%;
+}
+.subNewsDiv span{
+  font-size : 1vw;
+  padding-top : 2vw;
+  color : rgb(194, 194, 194);
+}
+.subNewsDiv h2{
+  font-size : 1.7vw;
+  color : black;
+  font-weight: bold;
+  padding-top : 1.8vw;
+}
+.subNewsDiv h3{
+  font-size : 1vw;
+  color : black;
+  line-height: 1.2vw;
+  text-transform: none;
+  padding : 2vw 0;
+}
+
+/* 모바일 HeadPhone */
+@media screen and (max-width: 1024px){
+  .backStageContainer {
+    position: relative;
+    top : 8vw;
+  }
+  .backStageWrap .mainText #text1{
+    width: 37vw;
+    font-size : 4vw;
+  }
+  .backStageCategory {
+    width : 100%;
+    height: 10vw;
+    font-size : 1.8vw;
+  }
+  .backStageCategory div{
+    padding : 0.2vw 0.8vw;
+    
+  }
+  .backStageList .newsList {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw 0vw 5vw;
+  }
+  .newsWrap{
+    width : 95%;
+    height: 90vw;
+    margin-bottom: 5vw;
+  }
+  .newsWrap h1{
+    font-size : 2.5vw;
+  }
+  .newsWrap .imgDiv{
+    height: 90%;
+  }
+  .backStageList button{
+    width : 12.5vw;
+    height : 4vw;
+    font-size :1.2vw;
+  }
+
+  /* subNews start */
+  .subNewsWrap{
+    width : 100%;
+  }
+  .subNewsWrap .subNewsDiv{
+    width :45%;
+    height: 75vw;
+  }
+  .subNewsDiv .imgDiv{
+    width : 100%;
+    height : 60%;
+  }
+  .subNewsDiv span{
+    font-size : 1.5vw;
+  }
+  .subNewsDiv h2{
+    font-size : 2.5vw;
+  }
+  .subNewsDiv h3{
+    font-size : 1.8vw;
+    line-height: 2.2vw;
+  }
+  
+}
